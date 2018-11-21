@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rcarrasco/SevaBit
+CMAKE_SOURCE_DIR = /home/peter/sevabit
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rcarrasco/SevaBit
+CMAKE_BINARY_DIR = /home/peter/sevabit
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -135,14 +135,14 @@ install/local/fast: install/local
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/rcarrasco/SevaBit && $(CMAKE_COMMAND) -E cmake_progress_start /home/rcarrasco/SevaBit/CMakeFiles /home/rcarrasco/SevaBit/src/cryptonote_basic/CMakeFiles/progress.marks
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f CMakeFiles/Makefile2 src/cryptonote_basic/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rcarrasco/SevaBit/CMakeFiles 0
+	cd /home/peter/sevabit && $(CMAKE_COMMAND) -E cmake_progress_start /home/peter/sevabit/CMakeFiles /home/peter/sevabit/src/cryptonote_basic/CMakeFiles/progress.marks
+	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/cryptonote_basic/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/sevabit/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f CMakeFiles/Makefile2 src/cryptonote_basic/clean
+	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/cryptonote_basic/clean
 .PHONY : clean
 
 # The main clean target
@@ -152,22 +152,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f CMakeFiles/Makefile2 src/cryptonote_basic/preinstall
+	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/cryptonote_basic/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f CMakeFiles/Makefile2 src/cryptonote_basic/preinstall
+	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/cryptonote_basic/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/rcarrasco/SevaBit && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/peter/sevabit && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/rule:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f CMakeFiles/Makefile2 src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/rule
+	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/rule
 .PHONY : src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/rule
 
 # Convenience name for target.
@@ -177,12 +177,12 @@ obj_cryptonote_basic: src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/r
 
 # fast build rule for target.
 obj_cryptonote_basic/fast:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/build.make src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/build
+	cd /home/peter/sevabit && $(MAKE) -f src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/build.make src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/build
 .PHONY : obj_cryptonote_basic/fast
 
 # Convenience name for target.
 src/cryptonote_basic/CMakeFiles/cryptonote_basic.dir/rule:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f CMakeFiles/Makefile2 src/cryptonote_basic/CMakeFiles/cryptonote_basic.dir/rule
+	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/cryptonote_basic/CMakeFiles/cryptonote_basic.dir/rule
 .PHONY : src/cryptonote_basic/CMakeFiles/cryptonote_basic.dir/rule
 
 # Convenience name for target.
@@ -192,7 +192,7 @@ cryptonote_basic: src/cryptonote_basic/CMakeFiles/cryptonote_basic.dir/rule
 
 # fast build rule for target.
 cryptonote_basic/fast:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f src/cryptonote_basic/CMakeFiles/cryptonote_basic.dir/build.make src/cryptonote_basic/CMakeFiles/cryptonote_basic.dir/build
+	cd /home/peter/sevabit && $(MAKE) -f src/cryptonote_basic/CMakeFiles/cryptonote_basic.dir/build.make src/cryptonote_basic/CMakeFiles/cryptonote_basic.dir/build
 .PHONY : cryptonote_basic/fast
 
 account.o: account.cpp.o
@@ -201,7 +201,7 @@ account.o: account.cpp.o
 
 # target to build an object file
 account.cpp.o:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/build.make src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/account.cpp.o
+	cd /home/peter/sevabit && $(MAKE) -f src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/build.make src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/account.cpp.o
 .PHONY : account.cpp.o
 
 account.i: account.cpp.i
@@ -210,7 +210,7 @@ account.i: account.cpp.i
 
 # target to preprocess a source file
 account.cpp.i:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/build.make src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/account.cpp.i
+	cd /home/peter/sevabit && $(MAKE) -f src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/build.make src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/account.cpp.i
 .PHONY : account.cpp.i
 
 account.s: account.cpp.s
@@ -219,7 +219,7 @@ account.s: account.cpp.s
 
 # target to generate assembly for a file
 account.cpp.s:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/build.make src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/account.cpp.s
+	cd /home/peter/sevabit && $(MAKE) -f src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/build.make src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/account.cpp.s
 .PHONY : account.cpp.s
 
 cryptonote_basic_impl.o: cryptonote_basic_impl.cpp.o
@@ -228,7 +228,7 @@ cryptonote_basic_impl.o: cryptonote_basic_impl.cpp.o
 
 # target to build an object file
 cryptonote_basic_impl.cpp.o:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/build.make src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/cryptonote_basic_impl.cpp.o
+	cd /home/peter/sevabit && $(MAKE) -f src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/build.make src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/cryptonote_basic_impl.cpp.o
 .PHONY : cryptonote_basic_impl.cpp.o
 
 cryptonote_basic_impl.i: cryptonote_basic_impl.cpp.i
@@ -237,7 +237,7 @@ cryptonote_basic_impl.i: cryptonote_basic_impl.cpp.i
 
 # target to preprocess a source file
 cryptonote_basic_impl.cpp.i:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/build.make src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/cryptonote_basic_impl.cpp.i
+	cd /home/peter/sevabit && $(MAKE) -f src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/build.make src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/cryptonote_basic_impl.cpp.i
 .PHONY : cryptonote_basic_impl.cpp.i
 
 cryptonote_basic_impl.s: cryptonote_basic_impl.cpp.s
@@ -246,7 +246,7 @@ cryptonote_basic_impl.s: cryptonote_basic_impl.cpp.s
 
 # target to generate assembly for a file
 cryptonote_basic_impl.cpp.s:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/build.make src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/cryptonote_basic_impl.cpp.s
+	cd /home/peter/sevabit && $(MAKE) -f src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/build.make src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/cryptonote_basic_impl.cpp.s
 .PHONY : cryptonote_basic_impl.cpp.s
 
 cryptonote_format_utils.o: cryptonote_format_utils.cpp.o
@@ -255,7 +255,7 @@ cryptonote_format_utils.o: cryptonote_format_utils.cpp.o
 
 # target to build an object file
 cryptonote_format_utils.cpp.o:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/build.make src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/cryptonote_format_utils.cpp.o
+	cd /home/peter/sevabit && $(MAKE) -f src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/build.make src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/cryptonote_format_utils.cpp.o
 .PHONY : cryptonote_format_utils.cpp.o
 
 cryptonote_format_utils.i: cryptonote_format_utils.cpp.i
@@ -264,7 +264,7 @@ cryptonote_format_utils.i: cryptonote_format_utils.cpp.i
 
 # target to preprocess a source file
 cryptonote_format_utils.cpp.i:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/build.make src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/cryptonote_format_utils.cpp.i
+	cd /home/peter/sevabit && $(MAKE) -f src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/build.make src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/cryptonote_format_utils.cpp.i
 .PHONY : cryptonote_format_utils.cpp.i
 
 cryptonote_format_utils.s: cryptonote_format_utils.cpp.s
@@ -273,7 +273,7 @@ cryptonote_format_utils.s: cryptonote_format_utils.cpp.s
 
 # target to generate assembly for a file
 cryptonote_format_utils.cpp.s:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/build.make src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/cryptonote_format_utils.cpp.s
+	cd /home/peter/sevabit && $(MAKE) -f src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/build.make src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/cryptonote_format_utils.cpp.s
 .PHONY : cryptonote_format_utils.cpp.s
 
 difficulty.o: difficulty.cpp.o
@@ -282,7 +282,7 @@ difficulty.o: difficulty.cpp.o
 
 # target to build an object file
 difficulty.cpp.o:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/build.make src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/difficulty.cpp.o
+	cd /home/peter/sevabit && $(MAKE) -f src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/build.make src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/difficulty.cpp.o
 .PHONY : difficulty.cpp.o
 
 difficulty.i: difficulty.cpp.i
@@ -291,7 +291,7 @@ difficulty.i: difficulty.cpp.i
 
 # target to preprocess a source file
 difficulty.cpp.i:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/build.make src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/difficulty.cpp.i
+	cd /home/peter/sevabit && $(MAKE) -f src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/build.make src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/difficulty.cpp.i
 .PHONY : difficulty.cpp.i
 
 difficulty.s: difficulty.cpp.s
@@ -300,7 +300,7 @@ difficulty.s: difficulty.cpp.s
 
 # target to generate assembly for a file
 difficulty.cpp.s:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/build.make src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/difficulty.cpp.s
+	cd /home/peter/sevabit && $(MAKE) -f src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/build.make src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/difficulty.cpp.s
 .PHONY : difficulty.cpp.s
 
 hardfork.o: hardfork.cpp.o
@@ -309,7 +309,7 @@ hardfork.o: hardfork.cpp.o
 
 # target to build an object file
 hardfork.cpp.o:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/build.make src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/hardfork.cpp.o
+	cd /home/peter/sevabit && $(MAKE) -f src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/build.make src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/hardfork.cpp.o
 .PHONY : hardfork.cpp.o
 
 hardfork.i: hardfork.cpp.i
@@ -318,7 +318,7 @@ hardfork.i: hardfork.cpp.i
 
 # target to preprocess a source file
 hardfork.cpp.i:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/build.make src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/hardfork.cpp.i
+	cd /home/peter/sevabit && $(MAKE) -f src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/build.make src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/hardfork.cpp.i
 .PHONY : hardfork.cpp.i
 
 hardfork.s: hardfork.cpp.s
@@ -327,7 +327,7 @@ hardfork.s: hardfork.cpp.s
 
 # target to generate assembly for a file
 hardfork.cpp.s:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/build.make src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/hardfork.cpp.s
+	cd /home/peter/sevabit && $(MAKE) -f src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/build.make src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/hardfork.cpp.s
 .PHONY : hardfork.cpp.s
 
 miner.o: miner.cpp.o
@@ -336,7 +336,7 @@ miner.o: miner.cpp.o
 
 # target to build an object file
 miner.cpp.o:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/build.make src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/miner.cpp.o
+	cd /home/peter/sevabit && $(MAKE) -f src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/build.make src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/miner.cpp.o
 .PHONY : miner.cpp.o
 
 miner.i: miner.cpp.i
@@ -345,7 +345,7 @@ miner.i: miner.cpp.i
 
 # target to preprocess a source file
 miner.cpp.i:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/build.make src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/miner.cpp.i
+	cd /home/peter/sevabit && $(MAKE) -f src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/build.make src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/miner.cpp.i
 .PHONY : miner.cpp.i
 
 miner.s: miner.cpp.s
@@ -354,7 +354,7 @@ miner.s: miner.cpp.s
 
 # target to generate assembly for a file
 miner.cpp.s:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/build.make src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/miner.cpp.s
+	cd /home/peter/sevabit && $(MAKE) -f src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/build.make src/cryptonote_basic/CMakeFiles/obj_cryptonote_basic.dir/miner.cpp.s
 .PHONY : miner.cpp.s
 
 # Help Target
@@ -401,6 +401,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/rcarrasco/SevaBit && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/peter/sevabit && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

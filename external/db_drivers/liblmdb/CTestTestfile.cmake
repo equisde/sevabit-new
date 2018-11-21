@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/rcarrasco/SevaBit/external/db_drivers/liblmdb
-# Build directory: /home/rcarrasco/SevaBit/external/db_drivers/liblmdb
+# Source directory: /home/peter/sevabit/external/db_drivers/liblmdb
+# Build directory: /home/peter/sevabit/external/db_drivers/liblmdb
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

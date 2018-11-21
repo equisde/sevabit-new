@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rcarrasco/SevaBit
+CMAKE_SOURCE_DIR = /home/peter/sevabit
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rcarrasco/SevaBit
+CMAKE_BINARY_DIR = /home/peter/sevabit
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,17 +100,6 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -133,16 +122,27 @@ install/strip/fast: install/strip
 
 .PHONY : install/strip/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # The main all target
 all: cmake_check_build_system
-	cd /home/rcarrasco/SevaBit && $(CMAKE_COMMAND) -E cmake_progress_start /home/rcarrasco/SevaBit/CMakeFiles /home/rcarrasco/SevaBit/contrib/epee/src/CMakeFiles/progress.marks
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f CMakeFiles/Makefile2 contrib/epee/src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rcarrasco/SevaBit/CMakeFiles 0
+	cd /home/peter/sevabit && $(CMAKE_COMMAND) -E cmake_progress_start /home/peter/sevabit/CMakeFiles /home/peter/sevabit/contrib/epee/src/CMakeFiles/progress.marks
+	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 contrib/epee/src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/sevabit/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f CMakeFiles/Makefile2 contrib/epee/src/clean
+	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 contrib/epee/src/clean
 .PHONY : clean
 
 # The main clean target
@@ -152,37 +152,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f CMakeFiles/Makefile2 contrib/epee/src/preinstall
+	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 contrib/epee/src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f CMakeFiles/Makefile2 contrib/epee/src/preinstall
+	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 contrib/epee/src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/rcarrasco/SevaBit && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/peter/sevabit && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-contrib/epee/src/CMakeFiles/epee_readline.dir/rule:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f CMakeFiles/Makefile2 contrib/epee/src/CMakeFiles/epee_readline.dir/rule
-.PHONY : contrib/epee/src/CMakeFiles/epee_readline.dir/rule
-
-# Convenience name for target.
-epee_readline: contrib/epee/src/CMakeFiles/epee_readline.dir/rule
-
-.PHONY : epee_readline
-
-# fast build rule for target.
-epee_readline/fast:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee_readline.dir/build.make contrib/epee/src/CMakeFiles/epee_readline.dir/build
-.PHONY : epee_readline/fast
-
-# Convenience name for target.
 contrib/epee/src/CMakeFiles/epee.dir/rule:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f CMakeFiles/Makefile2 contrib/epee/src/CMakeFiles/epee.dir/rule
+	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 contrib/epee/src/CMakeFiles/epee.dir/rule
 .PHONY : contrib/epee/src/CMakeFiles/epee.dir/rule
 
 # Convenience name for target.
@@ -192,7 +177,7 @@ epee: contrib/epee/src/CMakeFiles/epee.dir/rule
 
 # fast build rule for target.
 epee/fast:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/build
+	cd /home/peter/sevabit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/build
 .PHONY : epee/fast
 
 connection_basic.o: connection_basic.cpp.o
@@ -201,7 +186,7 @@ connection_basic.o: connection_basic.cpp.o
 
 # target to build an object file
 connection_basic.cpp.o:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/connection_basic.cpp.o
+	cd /home/peter/sevabit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/connection_basic.cpp.o
 .PHONY : connection_basic.cpp.o
 
 connection_basic.i: connection_basic.cpp.i
@@ -210,7 +195,7 @@ connection_basic.i: connection_basic.cpp.i
 
 # target to preprocess a source file
 connection_basic.cpp.i:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/connection_basic.cpp.i
+	cd /home/peter/sevabit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/connection_basic.cpp.i
 .PHONY : connection_basic.cpp.i
 
 connection_basic.s: connection_basic.cpp.s
@@ -219,7 +204,7 @@ connection_basic.s: connection_basic.cpp.s
 
 # target to generate assembly for a file
 connection_basic.cpp.s:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/connection_basic.cpp.s
+	cd /home/peter/sevabit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/connection_basic.cpp.s
 .PHONY : connection_basic.cpp.s
 
 hex.o: hex.cpp.o
@@ -228,7 +213,7 @@ hex.o: hex.cpp.o
 
 # target to build an object file
 hex.cpp.o:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/hex.cpp.o
+	cd /home/peter/sevabit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/hex.cpp.o
 .PHONY : hex.cpp.o
 
 hex.i: hex.cpp.i
@@ -237,7 +222,7 @@ hex.i: hex.cpp.i
 
 # target to preprocess a source file
 hex.cpp.i:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/hex.cpp.i
+	cd /home/peter/sevabit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/hex.cpp.i
 .PHONY : hex.cpp.i
 
 hex.s: hex.cpp.s
@@ -246,7 +231,7 @@ hex.s: hex.cpp.s
 
 # target to generate assembly for a file
 hex.cpp.s:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/hex.cpp.s
+	cd /home/peter/sevabit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/hex.cpp.s
 .PHONY : hex.cpp.s
 
 http_auth.o: http_auth.cpp.o
@@ -255,7 +240,7 @@ http_auth.o: http_auth.cpp.o
 
 # target to build an object file
 http_auth.cpp.o:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/http_auth.cpp.o
+	cd /home/peter/sevabit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/http_auth.cpp.o
 .PHONY : http_auth.cpp.o
 
 http_auth.i: http_auth.cpp.i
@@ -264,7 +249,7 @@ http_auth.i: http_auth.cpp.i
 
 # target to preprocess a source file
 http_auth.cpp.i:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/http_auth.cpp.i
+	cd /home/peter/sevabit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/http_auth.cpp.i
 .PHONY : http_auth.cpp.i
 
 http_auth.s: http_auth.cpp.s
@@ -273,7 +258,7 @@ http_auth.s: http_auth.cpp.s
 
 # target to generate assembly for a file
 http_auth.cpp.s:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/http_auth.cpp.s
+	cd /home/peter/sevabit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/http_auth.cpp.s
 .PHONY : http_auth.cpp.s
 
 memwipe.o: memwipe.c.o
@@ -282,7 +267,7 @@ memwipe.o: memwipe.c.o
 
 # target to build an object file
 memwipe.c.o:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/memwipe.c.o
+	cd /home/peter/sevabit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/memwipe.c.o
 .PHONY : memwipe.c.o
 
 memwipe.i: memwipe.c.i
@@ -291,7 +276,7 @@ memwipe.i: memwipe.c.i
 
 # target to preprocess a source file
 memwipe.c.i:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/memwipe.c.i
+	cd /home/peter/sevabit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/memwipe.c.i
 .PHONY : memwipe.c.i
 
 memwipe.s: memwipe.c.s
@@ -300,7 +285,7 @@ memwipe.s: memwipe.c.s
 
 # target to generate assembly for a file
 memwipe.c.s:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/memwipe.c.s
+	cd /home/peter/sevabit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/memwipe.c.s
 .PHONY : memwipe.c.s
 
 mlog.o: mlog.cpp.o
@@ -309,7 +294,7 @@ mlog.o: mlog.cpp.o
 
 # target to build an object file
 mlog.cpp.o:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/mlog.cpp.o
+	cd /home/peter/sevabit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/mlog.cpp.o
 .PHONY : mlog.cpp.o
 
 mlog.i: mlog.cpp.i
@@ -318,7 +303,7 @@ mlog.i: mlog.cpp.i
 
 # target to preprocess a source file
 mlog.cpp.i:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/mlog.cpp.i
+	cd /home/peter/sevabit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/mlog.cpp.i
 .PHONY : mlog.cpp.i
 
 mlog.s: mlog.cpp.s
@@ -327,7 +312,7 @@ mlog.s: mlog.cpp.s
 
 # target to generate assembly for a file
 mlog.cpp.s:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/mlog.cpp.s
+	cd /home/peter/sevabit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/mlog.cpp.s
 .PHONY : mlog.cpp.s
 
 net_utils_base.o: net_utils_base.cpp.o
@@ -336,7 +321,7 @@ net_utils_base.o: net_utils_base.cpp.o
 
 # target to build an object file
 net_utils_base.cpp.o:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/net_utils_base.cpp.o
+	cd /home/peter/sevabit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/net_utils_base.cpp.o
 .PHONY : net_utils_base.cpp.o
 
 net_utils_base.i: net_utils_base.cpp.i
@@ -345,7 +330,7 @@ net_utils_base.i: net_utils_base.cpp.i
 
 # target to preprocess a source file
 net_utils_base.cpp.i:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/net_utils_base.cpp.i
+	cd /home/peter/sevabit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/net_utils_base.cpp.i
 .PHONY : net_utils_base.cpp.i
 
 net_utils_base.s: net_utils_base.cpp.s
@@ -354,7 +339,7 @@ net_utils_base.s: net_utils_base.cpp.s
 
 # target to generate assembly for a file
 net_utils_base.cpp.s:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/net_utils_base.cpp.s
+	cd /home/peter/sevabit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/net_utils_base.cpp.s
 .PHONY : net_utils_base.cpp.s
 
 network_throttle-detail.o: network_throttle-detail.cpp.o
@@ -363,7 +348,7 @@ network_throttle-detail.o: network_throttle-detail.cpp.o
 
 # target to build an object file
 network_throttle-detail.cpp.o:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/network_throttle-detail.cpp.o
+	cd /home/peter/sevabit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/network_throttle-detail.cpp.o
 .PHONY : network_throttle-detail.cpp.o
 
 network_throttle-detail.i: network_throttle-detail.cpp.i
@@ -372,7 +357,7 @@ network_throttle-detail.i: network_throttle-detail.cpp.i
 
 # target to preprocess a source file
 network_throttle-detail.cpp.i:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/network_throttle-detail.cpp.i
+	cd /home/peter/sevabit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/network_throttle-detail.cpp.i
 .PHONY : network_throttle-detail.cpp.i
 
 network_throttle-detail.s: network_throttle-detail.cpp.s
@@ -381,7 +366,7 @@ network_throttle-detail.s: network_throttle-detail.cpp.s
 
 # target to generate assembly for a file
 network_throttle-detail.cpp.s:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/network_throttle-detail.cpp.s
+	cd /home/peter/sevabit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/network_throttle-detail.cpp.s
 .PHONY : network_throttle-detail.cpp.s
 
 network_throttle.o: network_throttle.cpp.o
@@ -390,7 +375,7 @@ network_throttle.o: network_throttle.cpp.o
 
 # target to build an object file
 network_throttle.cpp.o:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/network_throttle.cpp.o
+	cd /home/peter/sevabit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/network_throttle.cpp.o
 .PHONY : network_throttle.cpp.o
 
 network_throttle.i: network_throttle.cpp.i
@@ -399,7 +384,7 @@ network_throttle.i: network_throttle.cpp.i
 
 # target to preprocess a source file
 network_throttle.cpp.i:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/network_throttle.cpp.i
+	cd /home/peter/sevabit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/network_throttle.cpp.i
 .PHONY : network_throttle.cpp.i
 
 network_throttle.s: network_throttle.cpp.s
@@ -408,35 +393,8 @@ network_throttle.s: network_throttle.cpp.s
 
 # target to generate assembly for a file
 network_throttle.cpp.s:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/network_throttle.cpp.s
+	cd /home/peter/sevabit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/network_throttle.cpp.s
 .PHONY : network_throttle.cpp.s
-
-readline_buffer.o: readline_buffer.cpp.o
-
-.PHONY : readline_buffer.o
-
-# target to build an object file
-readline_buffer.cpp.o:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee_readline.dir/build.make contrib/epee/src/CMakeFiles/epee_readline.dir/readline_buffer.cpp.o
-.PHONY : readline_buffer.cpp.o
-
-readline_buffer.i: readline_buffer.cpp.i
-
-.PHONY : readline_buffer.i
-
-# target to preprocess a source file
-readline_buffer.cpp.i:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee_readline.dir/build.make contrib/epee/src/CMakeFiles/epee_readline.dir/readline_buffer.cpp.i
-.PHONY : readline_buffer.cpp.i
-
-readline_buffer.s: readline_buffer.cpp.s
-
-.PHONY : readline_buffer.s
-
-# target to generate assembly for a file
-readline_buffer.cpp.s:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee_readline.dir/build.make contrib/epee/src/CMakeFiles/epee_readline.dir/readline_buffer.cpp.s
-.PHONY : readline_buffer.cpp.s
 
 string_tools.o: string_tools.cpp.o
 
@@ -444,7 +402,7 @@ string_tools.o: string_tools.cpp.o
 
 # target to build an object file
 string_tools.cpp.o:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/string_tools.cpp.o
+	cd /home/peter/sevabit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/string_tools.cpp.o
 .PHONY : string_tools.cpp.o
 
 string_tools.i: string_tools.cpp.i
@@ -453,7 +411,7 @@ string_tools.i: string_tools.cpp.i
 
 # target to preprocess a source file
 string_tools.cpp.i:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/string_tools.cpp.i
+	cd /home/peter/sevabit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/string_tools.cpp.i
 .PHONY : string_tools.cpp.i
 
 string_tools.s: string_tools.cpp.s
@@ -462,7 +420,7 @@ string_tools.s: string_tools.cpp.s
 
 # target to generate assembly for a file
 string_tools.cpp.s:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/string_tools.cpp.s
+	cd /home/peter/sevabit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/string_tools.cpp.s
 .PHONY : string_tools.cpp.s
 
 wipeable_string.o: wipeable_string.cpp.o
@@ -471,7 +429,7 @@ wipeable_string.o: wipeable_string.cpp.o
 
 # target to build an object file
 wipeable_string.cpp.o:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/wipeable_string.cpp.o
+	cd /home/peter/sevabit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/wipeable_string.cpp.o
 .PHONY : wipeable_string.cpp.o
 
 wipeable_string.i: wipeable_string.cpp.i
@@ -480,7 +438,7 @@ wipeable_string.i: wipeable_string.cpp.i
 
 # target to preprocess a source file
 wipeable_string.cpp.i:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/wipeable_string.cpp.i
+	cd /home/peter/sevabit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/wipeable_string.cpp.i
 .PHONY : wipeable_string.cpp.i
 
 wipeable_string.s: wipeable_string.cpp.s
@@ -489,7 +447,7 @@ wipeable_string.s: wipeable_string.cpp.s
 
 # target to generate assembly for a file
 wipeable_string.cpp.s:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/wipeable_string.cpp.s
+	cd /home/peter/sevabit && $(MAKE) -f contrib/epee/src/CMakeFiles/epee.dir/build.make contrib/epee/src/CMakeFiles/epee.dir/wipeable_string.cpp.s
 .PHONY : wipeable_string.cpp.s
 
 # Help Target
@@ -502,11 +460,10 @@ help:
 	@echo "... install"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... test"
-	@echo "... epee_readline"
 	@echo "... epee"
 	@echo "... install/local"
 	@echo "... install/strip"
+	@echo "... test"
 	@echo "... connection_basic.o"
 	@echo "... connection_basic.i"
 	@echo "... connection_basic.s"
@@ -531,9 +488,6 @@ help:
 	@echo "... network_throttle.o"
 	@echo "... network_throttle.i"
 	@echo "... network_throttle.s"
-	@echo "... readline_buffer.o"
-	@echo "... readline_buffer.i"
-	@echo "... readline_buffer.s"
 	@echo "... string_tools.o"
 	@echo "... string_tools.i"
 	@echo "... string_tools.s"
@@ -551,6 +505,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/rcarrasco/SevaBit && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/peter/sevabit && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

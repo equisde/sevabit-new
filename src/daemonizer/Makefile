@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rcarrasco/SevaBit
+CMAKE_SOURCE_DIR = /home/peter/sevabit
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rcarrasco/SevaBit
+CMAKE_BINARY_DIR = /home/peter/sevabit
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -135,14 +135,14 @@ install/local/fast: install/local
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/rcarrasco/SevaBit && $(CMAKE_COMMAND) -E cmake_progress_start /home/rcarrasco/SevaBit/CMakeFiles /home/rcarrasco/SevaBit/src/daemonizer/CMakeFiles/progress.marks
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f CMakeFiles/Makefile2 src/daemonizer/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rcarrasco/SevaBit/CMakeFiles 0
+	cd /home/peter/sevabit && $(CMAKE_COMMAND) -E cmake_progress_start /home/peter/sevabit/CMakeFiles /home/peter/sevabit/src/daemonizer/CMakeFiles/progress.marks
+	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/daemonizer/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/sevabit/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f CMakeFiles/Makefile2 src/daemonizer/clean
+	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/daemonizer/clean
 .PHONY : clean
 
 # The main clean target
@@ -152,22 +152,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f CMakeFiles/Makefile2 src/daemonizer/preinstall
+	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/daemonizer/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f CMakeFiles/Makefile2 src/daemonizer/preinstall
+	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/daemonizer/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/rcarrasco/SevaBit && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/peter/sevabit && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/daemonizer/CMakeFiles/obj_daemonizer.dir/rule:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f CMakeFiles/Makefile2 src/daemonizer/CMakeFiles/obj_daemonizer.dir/rule
+	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/daemonizer/CMakeFiles/obj_daemonizer.dir/rule
 .PHONY : src/daemonizer/CMakeFiles/obj_daemonizer.dir/rule
 
 # Convenience name for target.
@@ -177,12 +177,12 @@ obj_daemonizer: src/daemonizer/CMakeFiles/obj_daemonizer.dir/rule
 
 # fast build rule for target.
 obj_daemonizer/fast:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f src/daemonizer/CMakeFiles/obj_daemonizer.dir/build.make src/daemonizer/CMakeFiles/obj_daemonizer.dir/build
+	cd /home/peter/sevabit && $(MAKE) -f src/daemonizer/CMakeFiles/obj_daemonizer.dir/build.make src/daemonizer/CMakeFiles/obj_daemonizer.dir/build
 .PHONY : obj_daemonizer/fast
 
 # Convenience name for target.
 src/daemonizer/CMakeFiles/daemonizer.dir/rule:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f CMakeFiles/Makefile2 src/daemonizer/CMakeFiles/daemonizer.dir/rule
+	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/daemonizer/CMakeFiles/daemonizer.dir/rule
 .PHONY : src/daemonizer/CMakeFiles/daemonizer.dir/rule
 
 # Convenience name for target.
@@ -192,7 +192,7 @@ daemonizer: src/daemonizer/CMakeFiles/daemonizer.dir/rule
 
 # fast build rule for target.
 daemonizer/fast:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f src/daemonizer/CMakeFiles/daemonizer.dir/build.make src/daemonizer/CMakeFiles/daemonizer.dir/build
+	cd /home/peter/sevabit && $(MAKE) -f src/daemonizer/CMakeFiles/daemonizer.dir/build.make src/daemonizer/CMakeFiles/daemonizer.dir/build
 .PHONY : daemonizer/fast
 
 posix_fork.o: posix_fork.cpp.o
@@ -201,7 +201,7 @@ posix_fork.o: posix_fork.cpp.o
 
 # target to build an object file
 posix_fork.cpp.o:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f src/daemonizer/CMakeFiles/obj_daemonizer.dir/build.make src/daemonizer/CMakeFiles/obj_daemonizer.dir/posix_fork.cpp.o
+	cd /home/peter/sevabit && $(MAKE) -f src/daemonizer/CMakeFiles/obj_daemonizer.dir/build.make src/daemonizer/CMakeFiles/obj_daemonizer.dir/posix_fork.cpp.o
 .PHONY : posix_fork.cpp.o
 
 posix_fork.i: posix_fork.cpp.i
@@ -210,7 +210,7 @@ posix_fork.i: posix_fork.cpp.i
 
 # target to preprocess a source file
 posix_fork.cpp.i:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f src/daemonizer/CMakeFiles/obj_daemonizer.dir/build.make src/daemonizer/CMakeFiles/obj_daemonizer.dir/posix_fork.cpp.i
+	cd /home/peter/sevabit && $(MAKE) -f src/daemonizer/CMakeFiles/obj_daemonizer.dir/build.make src/daemonizer/CMakeFiles/obj_daemonizer.dir/posix_fork.cpp.i
 .PHONY : posix_fork.cpp.i
 
 posix_fork.s: posix_fork.cpp.s
@@ -219,7 +219,7 @@ posix_fork.s: posix_fork.cpp.s
 
 # target to generate assembly for a file
 posix_fork.cpp.s:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f src/daemonizer/CMakeFiles/obj_daemonizer.dir/build.make src/daemonizer/CMakeFiles/obj_daemonizer.dir/posix_fork.cpp.s
+	cd /home/peter/sevabit && $(MAKE) -f src/daemonizer/CMakeFiles/obj_daemonizer.dir/build.make src/daemonizer/CMakeFiles/obj_daemonizer.dir/posix_fork.cpp.s
 .PHONY : posix_fork.cpp.s
 
 # Help Target
@@ -251,6 +251,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/rcarrasco/SevaBit && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/peter/sevabit && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rcarrasco/SevaBit
+CMAKE_SOURCE_DIR = /home/peter/sevabit
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rcarrasco/SevaBit
+CMAKE_BINARY_DIR = /home/peter/sevabit
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -135,14 +135,14 @@ install/strip/fast: install/strip
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/rcarrasco/SevaBit && $(CMAKE_COMMAND) -E cmake_progress_start /home/rcarrasco/SevaBit/CMakeFiles /home/rcarrasco/SevaBit/src/multisig/CMakeFiles/progress.marks
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f CMakeFiles/Makefile2 src/multisig/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rcarrasco/SevaBit/CMakeFiles 0
+	cd /home/peter/sevabit && $(CMAKE_COMMAND) -E cmake_progress_start /home/peter/sevabit/CMakeFiles /home/peter/sevabit/src/multisig/CMakeFiles/progress.marks
+	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/multisig/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/sevabit/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f CMakeFiles/Makefile2 src/multisig/clean
+	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/multisig/clean
 .PHONY : clean
 
 # The main clean target
@@ -152,22 +152,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f CMakeFiles/Makefile2 src/multisig/preinstall
+	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/multisig/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f CMakeFiles/Makefile2 src/multisig/preinstall
+	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/multisig/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/rcarrasco/SevaBit && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/peter/sevabit && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/multisig/CMakeFiles/obj_multisig.dir/rule:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f CMakeFiles/Makefile2 src/multisig/CMakeFiles/obj_multisig.dir/rule
+	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/multisig/CMakeFiles/obj_multisig.dir/rule
 .PHONY : src/multisig/CMakeFiles/obj_multisig.dir/rule
 
 # Convenience name for target.
@@ -177,12 +177,12 @@ obj_multisig: src/multisig/CMakeFiles/obj_multisig.dir/rule
 
 # fast build rule for target.
 obj_multisig/fast:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f src/multisig/CMakeFiles/obj_multisig.dir/build.make src/multisig/CMakeFiles/obj_multisig.dir/build
+	cd /home/peter/sevabit && $(MAKE) -f src/multisig/CMakeFiles/obj_multisig.dir/build.make src/multisig/CMakeFiles/obj_multisig.dir/build
 .PHONY : obj_multisig/fast
 
 # Convenience name for target.
 src/multisig/CMakeFiles/multisig.dir/rule:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f CMakeFiles/Makefile2 src/multisig/CMakeFiles/multisig.dir/rule
+	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/multisig/CMakeFiles/multisig.dir/rule
 .PHONY : src/multisig/CMakeFiles/multisig.dir/rule
 
 # Convenience name for target.
@@ -192,7 +192,7 @@ multisig: src/multisig/CMakeFiles/multisig.dir/rule
 
 # fast build rule for target.
 multisig/fast:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f src/multisig/CMakeFiles/multisig.dir/build.make src/multisig/CMakeFiles/multisig.dir/build
+	cd /home/peter/sevabit && $(MAKE) -f src/multisig/CMakeFiles/multisig.dir/build.make src/multisig/CMakeFiles/multisig.dir/build
 .PHONY : multisig/fast
 
 multisig.o: multisig.cpp.o
@@ -201,7 +201,7 @@ multisig.o: multisig.cpp.o
 
 # target to build an object file
 multisig.cpp.o:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f src/multisig/CMakeFiles/obj_multisig.dir/build.make src/multisig/CMakeFiles/obj_multisig.dir/multisig.cpp.o
+	cd /home/peter/sevabit && $(MAKE) -f src/multisig/CMakeFiles/obj_multisig.dir/build.make src/multisig/CMakeFiles/obj_multisig.dir/multisig.cpp.o
 .PHONY : multisig.cpp.o
 
 multisig.i: multisig.cpp.i
@@ -210,7 +210,7 @@ multisig.i: multisig.cpp.i
 
 # target to preprocess a source file
 multisig.cpp.i:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f src/multisig/CMakeFiles/obj_multisig.dir/build.make src/multisig/CMakeFiles/obj_multisig.dir/multisig.cpp.i
+	cd /home/peter/sevabit && $(MAKE) -f src/multisig/CMakeFiles/obj_multisig.dir/build.make src/multisig/CMakeFiles/obj_multisig.dir/multisig.cpp.i
 .PHONY : multisig.cpp.i
 
 multisig.s: multisig.cpp.s
@@ -219,7 +219,7 @@ multisig.s: multisig.cpp.s
 
 # target to generate assembly for a file
 multisig.cpp.s:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f src/multisig/CMakeFiles/obj_multisig.dir/build.make src/multisig/CMakeFiles/obj_multisig.dir/multisig.cpp.s
+	cd /home/peter/sevabit && $(MAKE) -f src/multisig/CMakeFiles/obj_multisig.dir/build.make src/multisig/CMakeFiles/obj_multisig.dir/multisig.cpp.s
 .PHONY : multisig.cpp.s
 
 # Help Target
@@ -251,6 +251,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/rcarrasco/SevaBit && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/peter/sevabit && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

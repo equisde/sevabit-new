@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rcarrasco/SevaBit
+CMAKE_SOURCE_DIR = /home/peter/sevabit
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rcarrasco/SevaBit
+CMAKE_BINARY_DIR = /home/peter/sevabit
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -135,14 +135,14 @@ install/local/fast: install/local
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/rcarrasco/SevaBit && $(CMAKE_COMMAND) -E cmake_progress_start /home/rcarrasco/SevaBit/CMakeFiles /home/rcarrasco/SevaBit/src/blockchain_db/CMakeFiles/progress.marks
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f CMakeFiles/Makefile2 src/blockchain_db/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rcarrasco/SevaBit/CMakeFiles 0
+	cd /home/peter/sevabit && $(CMAKE_COMMAND) -E cmake_progress_start /home/peter/sevabit/CMakeFiles /home/peter/sevabit/src/blockchain_db/CMakeFiles/progress.marks
+	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/blockchain_db/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/sevabit/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f CMakeFiles/Makefile2 src/blockchain_db/clean
+	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/blockchain_db/clean
 .PHONY : clean
 
 # The main clean target
@@ -152,22 +152,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f CMakeFiles/Makefile2 src/blockchain_db/preinstall
+	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/blockchain_db/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f CMakeFiles/Makefile2 src/blockchain_db/preinstall
+	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/blockchain_db/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/rcarrasco/SevaBit && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/peter/sevabit && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/blockchain_db/CMakeFiles/blockchain_db.dir/rule:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f CMakeFiles/Makefile2 src/blockchain_db/CMakeFiles/blockchain_db.dir/rule
+	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/blockchain_db/CMakeFiles/blockchain_db.dir/rule
 .PHONY : src/blockchain_db/CMakeFiles/blockchain_db.dir/rule
 
 # Convenience name for target.
@@ -177,12 +177,12 @@ blockchain_db: src/blockchain_db/CMakeFiles/blockchain_db.dir/rule
 
 # fast build rule for target.
 blockchain_db/fast:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f src/blockchain_db/CMakeFiles/blockchain_db.dir/build.make src/blockchain_db/CMakeFiles/blockchain_db.dir/build
+	cd /home/peter/sevabit && $(MAKE) -f src/blockchain_db/CMakeFiles/blockchain_db.dir/build.make src/blockchain_db/CMakeFiles/blockchain_db.dir/build
 .PHONY : blockchain_db/fast
 
 # Convenience name for target.
 src/blockchain_db/CMakeFiles/obj_blockchain_db.dir/rule:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f CMakeFiles/Makefile2 src/blockchain_db/CMakeFiles/obj_blockchain_db.dir/rule
+	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/blockchain_db/CMakeFiles/obj_blockchain_db.dir/rule
 .PHONY : src/blockchain_db/CMakeFiles/obj_blockchain_db.dir/rule
 
 # Convenience name for target.
@@ -192,7 +192,7 @@ obj_blockchain_db: src/blockchain_db/CMakeFiles/obj_blockchain_db.dir/rule
 
 # fast build rule for target.
 obj_blockchain_db/fast:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f src/blockchain_db/CMakeFiles/obj_blockchain_db.dir/build.make src/blockchain_db/CMakeFiles/obj_blockchain_db.dir/build
+	cd /home/peter/sevabit && $(MAKE) -f src/blockchain_db/CMakeFiles/obj_blockchain_db.dir/build.make src/blockchain_db/CMakeFiles/obj_blockchain_db.dir/build
 .PHONY : obj_blockchain_db/fast
 
 blockchain_db.o: blockchain_db.cpp.o
@@ -201,7 +201,7 @@ blockchain_db.o: blockchain_db.cpp.o
 
 # target to build an object file
 blockchain_db.cpp.o:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f src/blockchain_db/CMakeFiles/obj_blockchain_db.dir/build.make src/blockchain_db/CMakeFiles/obj_blockchain_db.dir/blockchain_db.cpp.o
+	cd /home/peter/sevabit && $(MAKE) -f src/blockchain_db/CMakeFiles/obj_blockchain_db.dir/build.make src/blockchain_db/CMakeFiles/obj_blockchain_db.dir/blockchain_db.cpp.o
 .PHONY : blockchain_db.cpp.o
 
 blockchain_db.i: blockchain_db.cpp.i
@@ -210,7 +210,7 @@ blockchain_db.i: blockchain_db.cpp.i
 
 # target to preprocess a source file
 blockchain_db.cpp.i:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f src/blockchain_db/CMakeFiles/obj_blockchain_db.dir/build.make src/blockchain_db/CMakeFiles/obj_blockchain_db.dir/blockchain_db.cpp.i
+	cd /home/peter/sevabit && $(MAKE) -f src/blockchain_db/CMakeFiles/obj_blockchain_db.dir/build.make src/blockchain_db/CMakeFiles/obj_blockchain_db.dir/blockchain_db.cpp.i
 .PHONY : blockchain_db.cpp.i
 
 blockchain_db.s: blockchain_db.cpp.s
@@ -219,7 +219,7 @@ blockchain_db.s: blockchain_db.cpp.s
 
 # target to generate assembly for a file
 blockchain_db.cpp.s:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f src/blockchain_db/CMakeFiles/obj_blockchain_db.dir/build.make src/blockchain_db/CMakeFiles/obj_blockchain_db.dir/blockchain_db.cpp.s
+	cd /home/peter/sevabit && $(MAKE) -f src/blockchain_db/CMakeFiles/obj_blockchain_db.dir/build.make src/blockchain_db/CMakeFiles/obj_blockchain_db.dir/blockchain_db.cpp.s
 .PHONY : blockchain_db.cpp.s
 
 lmdb/db_lmdb.o: lmdb/db_lmdb.cpp.o
@@ -228,7 +228,7 @@ lmdb/db_lmdb.o: lmdb/db_lmdb.cpp.o
 
 # target to build an object file
 lmdb/db_lmdb.cpp.o:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f src/blockchain_db/CMakeFiles/obj_blockchain_db.dir/build.make src/blockchain_db/CMakeFiles/obj_blockchain_db.dir/lmdb/db_lmdb.cpp.o
+	cd /home/peter/sevabit && $(MAKE) -f src/blockchain_db/CMakeFiles/obj_blockchain_db.dir/build.make src/blockchain_db/CMakeFiles/obj_blockchain_db.dir/lmdb/db_lmdb.cpp.o
 .PHONY : lmdb/db_lmdb.cpp.o
 
 lmdb/db_lmdb.i: lmdb/db_lmdb.cpp.i
@@ -237,7 +237,7 @@ lmdb/db_lmdb.i: lmdb/db_lmdb.cpp.i
 
 # target to preprocess a source file
 lmdb/db_lmdb.cpp.i:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f src/blockchain_db/CMakeFiles/obj_blockchain_db.dir/build.make src/blockchain_db/CMakeFiles/obj_blockchain_db.dir/lmdb/db_lmdb.cpp.i
+	cd /home/peter/sevabit && $(MAKE) -f src/blockchain_db/CMakeFiles/obj_blockchain_db.dir/build.make src/blockchain_db/CMakeFiles/obj_blockchain_db.dir/lmdb/db_lmdb.cpp.i
 .PHONY : lmdb/db_lmdb.cpp.i
 
 lmdb/db_lmdb.s: lmdb/db_lmdb.cpp.s
@@ -246,7 +246,7 @@ lmdb/db_lmdb.s: lmdb/db_lmdb.cpp.s
 
 # target to generate assembly for a file
 lmdb/db_lmdb.cpp.s:
-	cd /home/rcarrasco/SevaBit && $(MAKE) -f src/blockchain_db/CMakeFiles/obj_blockchain_db.dir/build.make src/blockchain_db/CMakeFiles/obj_blockchain_db.dir/lmdb/db_lmdb.cpp.s
+	cd /home/peter/sevabit && $(MAKE) -f src/blockchain_db/CMakeFiles/obj_blockchain_db.dir/build.make src/blockchain_db/CMakeFiles/obj_blockchain_db.dir/lmdb/db_lmdb.cpp.s
 .PHONY : lmdb/db_lmdb.cpp.s
 
 # Help Target
@@ -281,6 +281,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/rcarrasco/SevaBit && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/peter/sevabit && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

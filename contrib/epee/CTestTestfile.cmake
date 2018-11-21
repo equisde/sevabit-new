@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/rcarrasco/SevaBit/contrib/epee
-# Build directory: /home/rcarrasco/SevaBit/contrib/epee
+# Source directory: /home/peter/sevabit/contrib/epee
+# Build directory: /home/peter/sevabit/contrib/epee
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

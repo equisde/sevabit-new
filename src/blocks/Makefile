@@ -135,14 +135,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/peter/sevabit && $(CMAKE_COMMAND) -E cmake_progress_start /home/peter/sevabit/CMakeFiles /home/peter/sevabit/external/easylogging++/CMakeFiles/progress.marks
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 external/easylogging++/all
+	cd /home/peter/sevabit && $(CMAKE_COMMAND) -E cmake_progress_start /home/peter/sevabit/CMakeFiles /home/peter/sevabit/src/blocks/CMakeFiles/progress.marks
+	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/blocks/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/sevabit/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 external/easylogging++/clean
+	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/blocks/clean
 .PHONY : clean
 
 # The main clean target
@@ -152,12 +152,12 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 external/easylogging++/preinstall
+	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/blocks/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 external/easylogging++/preinstall
+	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/blocks/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
@@ -166,46 +166,46 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-external/easylogging++/CMakeFiles/easylogging.dir/rule:
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 external/easylogging++/CMakeFiles/easylogging.dir/rule
-.PHONY : external/easylogging++/CMakeFiles/easylogging.dir/rule
+src/blocks/CMakeFiles/blocks.dir/rule:
+	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/blocks/CMakeFiles/blocks.dir/rule
+.PHONY : src/blocks/CMakeFiles/blocks.dir/rule
 
 # Convenience name for target.
-easylogging: external/easylogging++/CMakeFiles/easylogging.dir/rule
+blocks: src/blocks/CMakeFiles/blocks.dir/rule
 
-.PHONY : easylogging
+.PHONY : blocks
 
 # fast build rule for target.
-easylogging/fast:
-	cd /home/peter/sevabit && $(MAKE) -f external/easylogging++/CMakeFiles/easylogging.dir/build.make external/easylogging++/CMakeFiles/easylogging.dir/build
-.PHONY : easylogging/fast
+blocks/fast:
+	cd /home/peter/sevabit && $(MAKE) -f src/blocks/CMakeFiles/blocks.dir/build.make src/blocks/CMakeFiles/blocks.dir/build
+.PHONY : blocks/fast
 
-easylogging++.o: easylogging++.cc.o
+blockexports.o: blockexports.c.o
 
-.PHONY : easylogging++.o
+.PHONY : blockexports.o
 
 # target to build an object file
-easylogging++.cc.o:
-	cd /home/peter/sevabit && $(MAKE) -f external/easylogging++/CMakeFiles/easylogging.dir/build.make external/easylogging++/CMakeFiles/easylogging.dir/easylogging++.cc.o
-.PHONY : easylogging++.cc.o
+blockexports.c.o:
+	cd /home/peter/sevabit && $(MAKE) -f src/blocks/CMakeFiles/blocks.dir/build.make src/blocks/CMakeFiles/blocks.dir/blockexports.c.o
+.PHONY : blockexports.c.o
 
-easylogging++.i: easylogging++.cc.i
+blockexports.i: blockexports.c.i
 
-.PHONY : easylogging++.i
+.PHONY : blockexports.i
 
 # target to preprocess a source file
-easylogging++.cc.i:
-	cd /home/peter/sevabit && $(MAKE) -f external/easylogging++/CMakeFiles/easylogging.dir/build.make external/easylogging++/CMakeFiles/easylogging.dir/easylogging++.cc.i
-.PHONY : easylogging++.cc.i
+blockexports.c.i:
+	cd /home/peter/sevabit && $(MAKE) -f src/blocks/CMakeFiles/blocks.dir/build.make src/blocks/CMakeFiles/blocks.dir/blockexports.c.i
+.PHONY : blockexports.c.i
 
-easylogging++.s: easylogging++.cc.s
+blockexports.s: blockexports.c.s
 
-.PHONY : easylogging++.s
+.PHONY : blockexports.s
 
 # target to generate assembly for a file
-easylogging++.cc.s:
-	cd /home/peter/sevabit && $(MAKE) -f external/easylogging++/CMakeFiles/easylogging.dir/build.make external/easylogging++/CMakeFiles/easylogging.dir/easylogging++.cc.s
-.PHONY : easylogging++.cc.s
+blockexports.c.s:
+	cd /home/peter/sevabit && $(MAKE) -f src/blocks/CMakeFiles/blocks.dir/build.make src/blocks/CMakeFiles/blocks.dir/blockexports.c.s
+.PHONY : blockexports.c.s
 
 # Help Target
 help:
@@ -217,13 +217,13 @@ help:
 	@echo "... install"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... easylogging"
+	@echo "... blocks"
 	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... test"
-	@echo "... easylogging++.o"
-	@echo "... easylogging++.i"
-	@echo "... easylogging++.s"
+	@echo "... blockexports.o"
+	@echo "... blockexports.i"
+	@echo "... blockexports.s"
 .PHONY : help
 
 
