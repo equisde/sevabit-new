@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/peter/sevabit
+CMAKE_SOURCE_DIR = /home/rcarrasco/Escritorio/sevabit-new
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/peter/sevabit
+CMAKE_BINARY_DIR = /home/rcarrasco/Escritorio/sevabit-new
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -135,14 +135,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/peter/sevabit && $(CMAKE_COMMAND) -E cmake_progress_start /home/peter/sevabit/CMakeFiles /home/peter/sevabit/src/blockchain_utilities/CMakeFiles/progress.marks
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/blockchain_utilities/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/sevabit/CMakeFiles 0
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(CMAKE_COMMAND) -E cmake_progress_start /home/rcarrasco/Escritorio/sevabit-new/CMakeFiles /home/rcarrasco/Escritorio/sevabit-new/src/blockchain_utilities/CMakeFiles/progress.marks
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f CMakeFiles/Makefile2 src/blockchain_utilities/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rcarrasco/Escritorio/sevabit-new/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/blockchain_utilities/clean
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f CMakeFiles/Makefile2 src/blockchain_utilities/clean
 .PHONY : clean
 
 # The main clean target
@@ -152,22 +152,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/blockchain_utilities/preinstall
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f CMakeFiles/Makefile2 src/blockchain_utilities/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/blockchain_utilities/preinstall
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f CMakeFiles/Makefile2 src/blockchain_utilities/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/peter/sevabit && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/blockchain_utilities/CMakeFiles/blockchain_usage.dir/rule:
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/blockchain_utilities/CMakeFiles/blockchain_usage.dir/rule
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f CMakeFiles/Makefile2 src/blockchain_utilities/CMakeFiles/blockchain_usage.dir/rule
 .PHONY : src/blockchain_utilities/CMakeFiles/blockchain_usage.dir/rule
 
 # Convenience name for target.
@@ -177,12 +177,12 @@ blockchain_usage: src/blockchain_utilities/CMakeFiles/blockchain_usage.dir/rule
 
 # fast build rule for target.
 blockchain_usage/fast:
-	cd /home/peter/sevabit && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_usage.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_usage.dir/build
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_usage.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_usage.dir/build
 .PHONY : blockchain_usage/fast
 
 # Convenience name for target.
 src/blockchain_utilities/CMakeFiles/blockchain_blackball.dir/rule:
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/blockchain_utilities/CMakeFiles/blockchain_blackball.dir/rule
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f CMakeFiles/Makefile2 src/blockchain_utilities/CMakeFiles/blockchain_blackball.dir/rule
 .PHONY : src/blockchain_utilities/CMakeFiles/blockchain_blackball.dir/rule
 
 # Convenience name for target.
@@ -192,12 +192,12 @@ blockchain_blackball: src/blockchain_utilities/CMakeFiles/blockchain_blackball.d
 
 # fast build rule for target.
 blockchain_blackball/fast:
-	cd /home/peter/sevabit && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_blackball.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_blackball.dir/build
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_blackball.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_blackball.dir/build
 .PHONY : blockchain_blackball/fast
 
 # Convenience name for target.
 src/blockchain_utilities/CMakeFiles/blockchain_export.dir/rule:
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/blockchain_utilities/CMakeFiles/blockchain_export.dir/rule
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f CMakeFiles/Makefile2 src/blockchain_utilities/CMakeFiles/blockchain_export.dir/rule
 .PHONY : src/blockchain_utilities/CMakeFiles/blockchain_export.dir/rule
 
 # Convenience name for target.
@@ -207,12 +207,12 @@ blockchain_export: src/blockchain_utilities/CMakeFiles/blockchain_export.dir/rul
 
 # fast build rule for target.
 blockchain_export/fast:
-	cd /home/peter/sevabit && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_export.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_export.dir/build
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_export.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_export.dir/build
 .PHONY : blockchain_export/fast
 
 # Convenience name for target.
 src/blockchain_utilities/CMakeFiles/blockchain_import.dir/rule:
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/blockchain_utilities/CMakeFiles/blockchain_import.dir/rule
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f CMakeFiles/Makefile2 src/blockchain_utilities/CMakeFiles/blockchain_import.dir/rule
 .PHONY : src/blockchain_utilities/CMakeFiles/blockchain_import.dir/rule
 
 # Convenience name for target.
@@ -222,7 +222,7 @@ blockchain_import: src/blockchain_utilities/CMakeFiles/blockchain_import.dir/rul
 
 # fast build rule for target.
 blockchain_import/fast:
-	cd /home/peter/sevabit && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_import.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_import.dir/build
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_import.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_import.dir/build
 .PHONY : blockchain_import/fast
 
 blockchain_blackball.o: blockchain_blackball.cpp.o
@@ -231,7 +231,7 @@ blockchain_blackball.o: blockchain_blackball.cpp.o
 
 # target to build an object file
 blockchain_blackball.cpp.o:
-	cd /home/peter/sevabit && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_blackball.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_blackball.dir/blockchain_blackball.cpp.o
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_blackball.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_blackball.dir/blockchain_blackball.cpp.o
 .PHONY : blockchain_blackball.cpp.o
 
 blockchain_blackball.i: blockchain_blackball.cpp.i
@@ -240,7 +240,7 @@ blockchain_blackball.i: blockchain_blackball.cpp.i
 
 # target to preprocess a source file
 blockchain_blackball.cpp.i:
-	cd /home/peter/sevabit && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_blackball.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_blackball.dir/blockchain_blackball.cpp.i
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_blackball.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_blackball.dir/blockchain_blackball.cpp.i
 .PHONY : blockchain_blackball.cpp.i
 
 blockchain_blackball.s: blockchain_blackball.cpp.s
@@ -249,7 +249,7 @@ blockchain_blackball.s: blockchain_blackball.cpp.s
 
 # target to generate assembly for a file
 blockchain_blackball.cpp.s:
-	cd /home/peter/sevabit && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_blackball.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_blackball.dir/blockchain_blackball.cpp.s
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_blackball.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_blackball.dir/blockchain_blackball.cpp.s
 .PHONY : blockchain_blackball.cpp.s
 
 blockchain_export.o: blockchain_export.cpp.o
@@ -258,7 +258,7 @@ blockchain_export.o: blockchain_export.cpp.o
 
 # target to build an object file
 blockchain_export.cpp.o:
-	cd /home/peter/sevabit && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_export.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_export.dir/blockchain_export.cpp.o
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_export.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_export.dir/blockchain_export.cpp.o
 .PHONY : blockchain_export.cpp.o
 
 blockchain_export.i: blockchain_export.cpp.i
@@ -267,7 +267,7 @@ blockchain_export.i: blockchain_export.cpp.i
 
 # target to preprocess a source file
 blockchain_export.cpp.i:
-	cd /home/peter/sevabit && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_export.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_export.dir/blockchain_export.cpp.i
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_export.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_export.dir/blockchain_export.cpp.i
 .PHONY : blockchain_export.cpp.i
 
 blockchain_export.s: blockchain_export.cpp.s
@@ -276,7 +276,7 @@ blockchain_export.s: blockchain_export.cpp.s
 
 # target to generate assembly for a file
 blockchain_export.cpp.s:
-	cd /home/peter/sevabit && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_export.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_export.dir/blockchain_export.cpp.s
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_export.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_export.dir/blockchain_export.cpp.s
 .PHONY : blockchain_export.cpp.s
 
 blockchain_import.o: blockchain_import.cpp.o
@@ -285,7 +285,7 @@ blockchain_import.o: blockchain_import.cpp.o
 
 # target to build an object file
 blockchain_import.cpp.o:
-	cd /home/peter/sevabit && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_import.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_import.dir/blockchain_import.cpp.o
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_import.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_import.dir/blockchain_import.cpp.o
 .PHONY : blockchain_import.cpp.o
 
 blockchain_import.i: blockchain_import.cpp.i
@@ -294,7 +294,7 @@ blockchain_import.i: blockchain_import.cpp.i
 
 # target to preprocess a source file
 blockchain_import.cpp.i:
-	cd /home/peter/sevabit && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_import.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_import.dir/blockchain_import.cpp.i
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_import.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_import.dir/blockchain_import.cpp.i
 .PHONY : blockchain_import.cpp.i
 
 blockchain_import.s: blockchain_import.cpp.s
@@ -303,7 +303,7 @@ blockchain_import.s: blockchain_import.cpp.s
 
 # target to generate assembly for a file
 blockchain_import.cpp.s:
-	cd /home/peter/sevabit && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_import.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_import.dir/blockchain_import.cpp.s
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_import.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_import.dir/blockchain_import.cpp.s
 .PHONY : blockchain_import.cpp.s
 
 blockchain_usage.o: blockchain_usage.cpp.o
@@ -312,7 +312,7 @@ blockchain_usage.o: blockchain_usage.cpp.o
 
 # target to build an object file
 blockchain_usage.cpp.o:
-	cd /home/peter/sevabit && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_usage.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_usage.dir/blockchain_usage.cpp.o
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_usage.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_usage.dir/blockchain_usage.cpp.o
 .PHONY : blockchain_usage.cpp.o
 
 blockchain_usage.i: blockchain_usage.cpp.i
@@ -321,7 +321,7 @@ blockchain_usage.i: blockchain_usage.cpp.i
 
 # target to preprocess a source file
 blockchain_usage.cpp.i:
-	cd /home/peter/sevabit && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_usage.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_usage.dir/blockchain_usage.cpp.i
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_usage.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_usage.dir/blockchain_usage.cpp.i
 .PHONY : blockchain_usage.cpp.i
 
 blockchain_usage.s: blockchain_usage.cpp.s
@@ -330,7 +330,7 @@ blockchain_usage.s: blockchain_usage.cpp.s
 
 # target to generate assembly for a file
 blockchain_usage.cpp.s:
-	cd /home/peter/sevabit && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_usage.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_usage.dir/blockchain_usage.cpp.s
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_usage.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_usage.dir/blockchain_usage.cpp.s
 .PHONY : blockchain_usage.cpp.s
 
 blocksdat_file.o: blocksdat_file.cpp.o
@@ -339,8 +339,8 @@ blocksdat_file.o: blocksdat_file.cpp.o
 
 # target to build an object file
 blocksdat_file.cpp.o:
-	cd /home/peter/sevabit && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_export.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_export.dir/blocksdat_file.cpp.o
-	cd /home/peter/sevabit && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_import.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_import.dir/blocksdat_file.cpp.o
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_export.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_export.dir/blocksdat_file.cpp.o
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_import.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_import.dir/blocksdat_file.cpp.o
 .PHONY : blocksdat_file.cpp.o
 
 blocksdat_file.i: blocksdat_file.cpp.i
@@ -349,8 +349,8 @@ blocksdat_file.i: blocksdat_file.cpp.i
 
 # target to preprocess a source file
 blocksdat_file.cpp.i:
-	cd /home/peter/sevabit && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_export.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_export.dir/blocksdat_file.cpp.i
-	cd /home/peter/sevabit && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_import.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_import.dir/blocksdat_file.cpp.i
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_export.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_export.dir/blocksdat_file.cpp.i
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_import.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_import.dir/blocksdat_file.cpp.i
 .PHONY : blocksdat_file.cpp.i
 
 blocksdat_file.s: blocksdat_file.cpp.s
@@ -359,8 +359,8 @@ blocksdat_file.s: blocksdat_file.cpp.s
 
 # target to generate assembly for a file
 blocksdat_file.cpp.s:
-	cd /home/peter/sevabit && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_export.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_export.dir/blocksdat_file.cpp.s
-	cd /home/peter/sevabit && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_import.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_import.dir/blocksdat_file.cpp.s
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_export.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_export.dir/blocksdat_file.cpp.s
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_import.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_import.dir/blocksdat_file.cpp.s
 .PHONY : blocksdat_file.cpp.s
 
 bootstrap_file.o: bootstrap_file.cpp.o
@@ -369,8 +369,8 @@ bootstrap_file.o: bootstrap_file.cpp.o
 
 # target to build an object file
 bootstrap_file.cpp.o:
-	cd /home/peter/sevabit && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_export.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_export.dir/bootstrap_file.cpp.o
-	cd /home/peter/sevabit && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_import.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_import.dir/bootstrap_file.cpp.o
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_export.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_export.dir/bootstrap_file.cpp.o
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_import.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_import.dir/bootstrap_file.cpp.o
 .PHONY : bootstrap_file.cpp.o
 
 bootstrap_file.i: bootstrap_file.cpp.i
@@ -379,8 +379,8 @@ bootstrap_file.i: bootstrap_file.cpp.i
 
 # target to preprocess a source file
 bootstrap_file.cpp.i:
-	cd /home/peter/sevabit && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_export.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_export.dir/bootstrap_file.cpp.i
-	cd /home/peter/sevabit && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_import.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_import.dir/bootstrap_file.cpp.i
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_export.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_export.dir/bootstrap_file.cpp.i
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_import.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_import.dir/bootstrap_file.cpp.i
 .PHONY : bootstrap_file.cpp.i
 
 bootstrap_file.s: bootstrap_file.cpp.s
@@ -389,8 +389,8 @@ bootstrap_file.s: bootstrap_file.cpp.s
 
 # target to generate assembly for a file
 bootstrap_file.cpp.s:
-	cd /home/peter/sevabit && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_export.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_export.dir/bootstrap_file.cpp.s
-	cd /home/peter/sevabit && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_import.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_import.dir/bootstrap_file.cpp.s
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_export.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_export.dir/bootstrap_file.cpp.s
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/blockchain_utilities/CMakeFiles/blockchain_import.dir/build.make src/blockchain_utilities/CMakeFiles/blockchain_import.dir/bootstrap_file.cpp.s
 .PHONY : bootstrap_file.cpp.s
 
 # Help Target
@@ -439,6 +439,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/peter/sevabit && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

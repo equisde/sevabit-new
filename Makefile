@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/peter/sevabit
+CMAKE_SOURCE_DIR = /home/rcarrasco/Escritorio/sevabit-new
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/peter/sevabit
+CMAKE_BINARY_DIR = /home/rcarrasco/Escritorio/sevabit-new
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -111,17 +111,6 @@ test/fast: test
 
 .PHONY : test/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-
-.PHONY : install/strip/fast
-
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -133,11 +122,22 @@ install/local/fast: install/local
 
 .PHONY : install/local/fast
 
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: install/strip
+
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/sevabit/CMakeFiles /home/peter/sevabit/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rcarrasco/Escritorio/sevabit-new/CMakeFiles /home/rcarrasco/Escritorio/sevabit-new/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/sevabit/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rcarrasco/Escritorio/sevabit-new/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -179,6 +179,19 @@ generate_translations_header/fast:
 .PHONY : generate_translations_header/fast
 
 #=============================================================================
+# Target rules for targets named doc
+
+# Build rule for target.
+doc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 doc
+.PHONY : doc
+
+# fast build rule for target.
+doc/fast:
+	$(MAKE) -f CMakeFiles/doc.dir/build.make CMakeFiles/doc.dir/build
+.PHONY : doc/fast
+
+#=============================================================================
 # Target rules for targets named libminiupnpc-static
 
 # Build rule for target.
@@ -190,19 +203,6 @@ libminiupnpc-static: cmake_check_build_system
 libminiupnpc-static/fast:
 	$(MAKE) -f external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build.make external/miniupnp/miniupnpc/CMakeFiles/libminiupnpc-static.dir/build
 .PHONY : libminiupnpc-static/fast
-
-#=============================================================================
-# Target rules for targets named unbound
-
-# Build rule for target.
-unbound: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 unbound
-.PHONY : unbound
-
-# fast build rule for target.
-unbound/fast:
-	$(MAKE) -f external/unbound/CMakeFiles/unbound.dir/build.make external/unbound/CMakeFiles/unbound.dir/build
-.PHONY : unbound/fast
 
 #=============================================================================
 # Target rules for targets named lmdb
@@ -955,12 +955,12 @@ help:
 	@echo "... install"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... generate_translations_header"
 	@echo "... test"
-	@echo "... install/strip"
+	@echo "... generate_translations_header"
+	@echo "... doc"
 	@echo "... install/local"
+	@echo "... install/strip"
 	@echo "... libminiupnpc-static"
-	@echo "... unbound"
 	@echo "... lmdb"
 	@echo "... easylogging"
 	@echo "... epee"

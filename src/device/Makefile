@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/peter/sevabit
+CMAKE_SOURCE_DIR = /home/rcarrasco/Escritorio/sevabit-new
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/peter/sevabit
+CMAKE_BINARY_DIR = /home/rcarrasco/Escritorio/sevabit-new
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -135,14 +135,14 @@ install/local/fast: install/local
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/peter/sevabit && $(CMAKE_COMMAND) -E cmake_progress_start /home/peter/sevabit/CMakeFiles /home/peter/sevabit/src/device/CMakeFiles/progress.marks
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/device/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/sevabit/CMakeFiles 0
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(CMAKE_COMMAND) -E cmake_progress_start /home/rcarrasco/Escritorio/sevabit-new/CMakeFiles /home/rcarrasco/Escritorio/sevabit-new/src/device/CMakeFiles/progress.marks
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f CMakeFiles/Makefile2 src/device/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rcarrasco/Escritorio/sevabit-new/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/device/clean
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f CMakeFiles/Makefile2 src/device/clean
 .PHONY : clean
 
 # The main clean target
@@ -152,22 +152,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/device/preinstall
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f CMakeFiles/Makefile2 src/device/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/device/preinstall
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f CMakeFiles/Makefile2 src/device/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/peter/sevabit && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/device/CMakeFiles/obj_device.dir/rule:
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/device/CMakeFiles/obj_device.dir/rule
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f CMakeFiles/Makefile2 src/device/CMakeFiles/obj_device.dir/rule
 .PHONY : src/device/CMakeFiles/obj_device.dir/rule
 
 # Convenience name for target.
@@ -177,12 +177,12 @@ obj_device: src/device/CMakeFiles/obj_device.dir/rule
 
 # fast build rule for target.
 obj_device/fast:
-	cd /home/peter/sevabit && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/build
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/build
 .PHONY : obj_device/fast
 
 # Convenience name for target.
 src/device/CMakeFiles/device.dir/rule:
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/device/CMakeFiles/device.dir/rule
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f CMakeFiles/Makefile2 src/device/CMakeFiles/device.dir/rule
 .PHONY : src/device/CMakeFiles/device.dir/rule
 
 # Convenience name for target.
@@ -192,7 +192,7 @@ device: src/device/CMakeFiles/device.dir/rule
 
 # fast build rule for target.
 device/fast:
-	cd /home/peter/sevabit && $(MAKE) -f src/device/CMakeFiles/device.dir/build.make src/device/CMakeFiles/device.dir/build
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/device/CMakeFiles/device.dir/build.make src/device/CMakeFiles/device.dir/build
 .PHONY : device/fast
 
 device.o: device.cpp.o
@@ -201,7 +201,7 @@ device.o: device.cpp.o
 
 # target to build an object file
 device.cpp.o:
-	cd /home/peter/sevabit && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/device.cpp.o
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/device.cpp.o
 .PHONY : device.cpp.o
 
 device.i: device.cpp.i
@@ -210,7 +210,7 @@ device.i: device.cpp.i
 
 # target to preprocess a source file
 device.cpp.i:
-	cd /home/peter/sevabit && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/device.cpp.i
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/device.cpp.i
 .PHONY : device.cpp.i
 
 device.s: device.cpp.s
@@ -219,7 +219,7 @@ device.s: device.cpp.s
 
 # target to generate assembly for a file
 device.cpp.s:
-	cd /home/peter/sevabit && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/device.cpp.s
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/device.cpp.s
 .PHONY : device.cpp.s
 
 device_default.o: device_default.cpp.o
@@ -228,7 +228,7 @@ device_default.o: device_default.cpp.o
 
 # target to build an object file
 device_default.cpp.o:
-	cd /home/peter/sevabit && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/device_default.cpp.o
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/device_default.cpp.o
 .PHONY : device_default.cpp.o
 
 device_default.i: device_default.cpp.i
@@ -237,7 +237,7 @@ device_default.i: device_default.cpp.i
 
 # target to preprocess a source file
 device_default.cpp.i:
-	cd /home/peter/sevabit && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/device_default.cpp.i
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/device_default.cpp.i
 .PHONY : device_default.cpp.i
 
 device_default.s: device_default.cpp.s
@@ -246,7 +246,7 @@ device_default.s: device_default.cpp.s
 
 # target to generate assembly for a file
 device_default.cpp.s:
-	cd /home/peter/sevabit && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/device_default.cpp.s
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/device_default.cpp.s
 .PHONY : device_default.cpp.s
 
 log.o: log.cpp.o
@@ -255,7 +255,7 @@ log.o: log.cpp.o
 
 # target to build an object file
 log.cpp.o:
-	cd /home/peter/sevabit && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/log.cpp.o
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/log.cpp.o
 .PHONY : log.cpp.o
 
 log.i: log.cpp.i
@@ -264,7 +264,7 @@ log.i: log.cpp.i
 
 # target to preprocess a source file
 log.cpp.i:
-	cd /home/peter/sevabit && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/log.cpp.i
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/log.cpp.i
 .PHONY : log.cpp.i
 
 log.s: log.cpp.s
@@ -273,7 +273,7 @@ log.s: log.cpp.s
 
 # target to generate assembly for a file
 log.cpp.s:
-	cd /home/peter/sevabit && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/log.cpp.s
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/device/CMakeFiles/obj_device.dir/build.make src/device/CMakeFiles/obj_device.dir/log.cpp.s
 .PHONY : log.cpp.s
 
 # Help Target
@@ -311,6 +311,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/peter/sevabit && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

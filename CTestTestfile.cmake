@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/peter/sevabit
-# Build directory: /home/peter/sevabit
+# Source directory: /home/rcarrasco/Escritorio/sevabit-new
+# Build directory: /home/rcarrasco/Escritorio/sevabit-new
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

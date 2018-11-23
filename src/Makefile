@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/peter/sevabit
+CMAKE_SOURCE_DIR = /home/rcarrasco/Escritorio/sevabit-new
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/peter/sevabit
+CMAKE_BINARY_DIR = /home/rcarrasco/Escritorio/sevabit-new
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -135,14 +135,14 @@ install/strip/fast: install/strip
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/peter/sevabit && $(CMAKE_COMMAND) -E cmake_progress_start /home/peter/sevabit/CMakeFiles /home/peter/sevabit/src/CMakeFiles/progress.marks
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/sevabit/CMakeFiles 0
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(CMAKE_COMMAND) -E cmake_progress_start /home/rcarrasco/Escritorio/sevabit-new/CMakeFiles /home/rcarrasco/Escritorio/sevabit-new/src/CMakeFiles/progress.marks
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rcarrasco/Escritorio/sevabit-new/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -152,22 +152,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/peter/sevabit && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/genversion.dir/rule:
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/genversion.dir/rule
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/genversion.dir/rule
 .PHONY : src/CMakeFiles/genversion.dir/rule
 
 # Convenience name for target.
@@ -177,12 +177,12 @@ genversion: src/CMakeFiles/genversion.dir/rule
 
 # fast build rule for target.
 genversion/fast:
-	cd /home/peter/sevabit && $(MAKE) -f src/CMakeFiles/genversion.dir/build.make src/CMakeFiles/genversion.dir/build
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/CMakeFiles/genversion.dir/build.make src/CMakeFiles/genversion.dir/build
 .PHONY : genversion/fast
 
 # Convenience name for target.
 src/CMakeFiles/obj_version.dir/rule:
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/obj_version.dir/rule
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/obj_version.dir/rule
 .PHONY : src/CMakeFiles/obj_version.dir/rule
 
 # Convenience name for target.
@@ -192,12 +192,12 @@ obj_version: src/CMakeFiles/obj_version.dir/rule
 
 # fast build rule for target.
 obj_version/fast:
-	cd /home/peter/sevabit && $(MAKE) -f src/CMakeFiles/obj_version.dir/build.make src/CMakeFiles/obj_version.dir/build
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/CMakeFiles/obj_version.dir/build.make src/CMakeFiles/obj_version.dir/build
 .PHONY : obj_version/fast
 
 # Convenience name for target.
 src/CMakeFiles/version.dir/rule:
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/version.dir/rule
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/version.dir/rule
 .PHONY : src/CMakeFiles/version.dir/rule
 
 # Convenience name for target.
@@ -207,7 +207,7 @@ version: src/CMakeFiles/version.dir/rule
 
 # fast build rule for target.
 version/fast:
-	cd /home/peter/sevabit && $(MAKE) -f src/CMakeFiles/version.dir/build.make src/CMakeFiles/version.dir/build
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/CMakeFiles/version.dir/build.make src/CMakeFiles/version.dir/build
 .PHONY : version/fast
 
 __/version.o: __/version.cpp.o
@@ -216,7 +216,7 @@ __/version.o: __/version.cpp.o
 
 # target to build an object file
 __/version.cpp.o:
-	cd /home/peter/sevabit && $(MAKE) -f src/CMakeFiles/obj_version.dir/build.make src/CMakeFiles/obj_version.dir/__/version.cpp.o
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/CMakeFiles/obj_version.dir/build.make src/CMakeFiles/obj_version.dir/__/version.cpp.o
 .PHONY : __/version.cpp.o
 
 __/version.i: __/version.cpp.i
@@ -225,7 +225,7 @@ __/version.i: __/version.cpp.i
 
 # target to preprocess a source file
 __/version.cpp.i:
-	cd /home/peter/sevabit && $(MAKE) -f src/CMakeFiles/obj_version.dir/build.make src/CMakeFiles/obj_version.dir/__/version.cpp.i
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/CMakeFiles/obj_version.dir/build.make src/CMakeFiles/obj_version.dir/__/version.cpp.i
 .PHONY : __/version.cpp.i
 
 __/version.s: __/version.cpp.s
@@ -234,7 +234,7 @@ __/version.s: __/version.cpp.s
 
 # target to generate assembly for a file
 __/version.cpp.s:
-	cd /home/peter/sevabit && $(MAKE) -f src/CMakeFiles/obj_version.dir/build.make src/CMakeFiles/obj_version.dir/__/version.cpp.s
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/CMakeFiles/obj_version.dir/build.make src/CMakeFiles/obj_version.dir/__/version.cpp.s
 .PHONY : __/version.cpp.s
 
 # Help Target
@@ -267,6 +267,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/peter/sevabit && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

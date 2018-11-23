@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/peter/sevabit
+CMAKE_SOURCE_DIR = /home/rcarrasco/Escritorio/sevabit-new
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/peter/sevabit
+CMAKE_BINARY_DIR = /home/rcarrasco/Escritorio/sevabit-new
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -135,14 +135,14 @@ install/local/fast: install/local
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/peter/sevabit && $(CMAKE_COMMAND) -E cmake_progress_start /home/peter/sevabit/CMakeFiles /home/peter/sevabit/src/crypto/CMakeFiles/progress.marks
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/crypto/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/sevabit/CMakeFiles 0
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(CMAKE_COMMAND) -E cmake_progress_start /home/rcarrasco/Escritorio/sevabit-new/CMakeFiles /home/rcarrasco/Escritorio/sevabit-new/src/crypto/CMakeFiles/progress.marks
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f CMakeFiles/Makefile2 src/crypto/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rcarrasco/Escritorio/sevabit-new/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/crypto/clean
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f CMakeFiles/Makefile2 src/crypto/clean
 .PHONY : clean
 
 # The main clean target
@@ -152,22 +152,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/crypto/preinstall
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f CMakeFiles/Makefile2 src/crypto/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/crypto/preinstall
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f CMakeFiles/Makefile2 src/crypto/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/peter/sevabit && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/crypto/CMakeFiles/obj_cncrypto.dir/rule:
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/crypto/CMakeFiles/obj_cncrypto.dir/rule
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f CMakeFiles/Makefile2 src/crypto/CMakeFiles/obj_cncrypto.dir/rule
 .PHONY : src/crypto/CMakeFiles/obj_cncrypto.dir/rule
 
 # Convenience name for target.
@@ -177,12 +177,12 @@ obj_cncrypto: src/crypto/CMakeFiles/obj_cncrypto.dir/rule
 
 # fast build rule for target.
 obj_cncrypto/fast:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/build
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/build
 .PHONY : obj_cncrypto/fast
 
 # Convenience name for target.
 src/crypto/CMakeFiles/cncrypto.dir/rule:
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/crypto/CMakeFiles/cncrypto.dir/rule
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f CMakeFiles/Makefile2 src/crypto/CMakeFiles/cncrypto.dir/rule
 .PHONY : src/crypto/CMakeFiles/cncrypto.dir/rule
 
 # Convenience name for target.
@@ -192,7 +192,7 @@ cncrypto: src/crypto/CMakeFiles/cncrypto.dir/rule
 
 # fast build rule for target.
 cncrypto/fast:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/cncrypto.dir/build.make src/crypto/CMakeFiles/cncrypto.dir/build
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/cncrypto.dir/build.make src/crypto/CMakeFiles/cncrypto.dir/build
 .PHONY : cncrypto/fast
 
 aesb.o: aesb.c.o
@@ -201,7 +201,7 @@ aesb.o: aesb.c.o
 
 # target to build an object file
 aesb.c.o:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/aesb.c.o
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/aesb.c.o
 .PHONY : aesb.c.o
 
 aesb.i: aesb.c.i
@@ -210,7 +210,7 @@ aesb.i: aesb.c.i
 
 # target to preprocess a source file
 aesb.c.i:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/aesb.c.i
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/aesb.c.i
 .PHONY : aesb.c.i
 
 aesb.s: aesb.c.s
@@ -219,7 +219,7 @@ aesb.s: aesb.c.s
 
 # target to generate assembly for a file
 aesb.c.s:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/aesb.c.s
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/aesb.c.s
 .PHONY : aesb.c.s
 
 blake256.o: blake256.c.o
@@ -228,7 +228,7 @@ blake256.o: blake256.c.o
 
 # target to build an object file
 blake256.c.o:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/blake256.c.o
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/blake256.c.o
 .PHONY : blake256.c.o
 
 blake256.i: blake256.c.i
@@ -237,7 +237,7 @@ blake256.i: blake256.c.i
 
 # target to preprocess a source file
 blake256.c.i:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/blake256.c.i
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/blake256.c.i
 .PHONY : blake256.c.i
 
 blake256.s: blake256.c.s
@@ -246,7 +246,7 @@ blake256.s: blake256.c.s
 
 # target to generate assembly for a file
 blake256.c.s:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/blake256.c.s
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/blake256.c.s
 .PHONY : blake256.c.s
 
 chacha.o: chacha.c.o
@@ -255,7 +255,7 @@ chacha.o: chacha.c.o
 
 # target to build an object file
 chacha.c.o:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/chacha.c.o
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/chacha.c.o
 .PHONY : chacha.c.o
 
 chacha.i: chacha.c.i
@@ -264,7 +264,7 @@ chacha.i: chacha.c.i
 
 # target to preprocess a source file
 chacha.c.i:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/chacha.c.i
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/chacha.c.i
 .PHONY : chacha.c.i
 
 chacha.s: chacha.c.s
@@ -273,7 +273,7 @@ chacha.s: chacha.c.s
 
 # target to generate assembly for a file
 chacha.c.s:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/chacha.c.s
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/chacha.c.s
 .PHONY : chacha.c.s
 
 cn_slow_hash_hard_arm.o: cn_slow_hash_hard_arm.cpp.o
@@ -282,7 +282,7 @@ cn_slow_hash_hard_arm.o: cn_slow_hash_hard_arm.cpp.o
 
 # target to build an object file
 cn_slow_hash_hard_arm.cpp.o:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/cn_slow_hash_hard_arm.cpp.o
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/cn_slow_hash_hard_arm.cpp.o
 .PHONY : cn_slow_hash_hard_arm.cpp.o
 
 cn_slow_hash_hard_arm.i: cn_slow_hash_hard_arm.cpp.i
@@ -291,7 +291,7 @@ cn_slow_hash_hard_arm.i: cn_slow_hash_hard_arm.cpp.i
 
 # target to preprocess a source file
 cn_slow_hash_hard_arm.cpp.i:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/cn_slow_hash_hard_arm.cpp.i
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/cn_slow_hash_hard_arm.cpp.i
 .PHONY : cn_slow_hash_hard_arm.cpp.i
 
 cn_slow_hash_hard_arm.s: cn_slow_hash_hard_arm.cpp.s
@@ -300,7 +300,7 @@ cn_slow_hash_hard_arm.s: cn_slow_hash_hard_arm.cpp.s
 
 # target to generate assembly for a file
 cn_slow_hash_hard_arm.cpp.s:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/cn_slow_hash_hard_arm.cpp.s
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/cn_slow_hash_hard_arm.cpp.s
 .PHONY : cn_slow_hash_hard_arm.cpp.s
 
 cn_slow_hash_hard_intel.o: cn_slow_hash_hard_intel.cpp.o
@@ -309,7 +309,7 @@ cn_slow_hash_hard_intel.o: cn_slow_hash_hard_intel.cpp.o
 
 # target to build an object file
 cn_slow_hash_hard_intel.cpp.o:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/cn_slow_hash_hard_intel.cpp.o
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/cn_slow_hash_hard_intel.cpp.o
 .PHONY : cn_slow_hash_hard_intel.cpp.o
 
 cn_slow_hash_hard_intel.i: cn_slow_hash_hard_intel.cpp.i
@@ -318,7 +318,7 @@ cn_slow_hash_hard_intel.i: cn_slow_hash_hard_intel.cpp.i
 
 # target to preprocess a source file
 cn_slow_hash_hard_intel.cpp.i:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/cn_slow_hash_hard_intel.cpp.i
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/cn_slow_hash_hard_intel.cpp.i
 .PHONY : cn_slow_hash_hard_intel.cpp.i
 
 cn_slow_hash_hard_intel.s: cn_slow_hash_hard_intel.cpp.s
@@ -327,7 +327,7 @@ cn_slow_hash_hard_intel.s: cn_slow_hash_hard_intel.cpp.s
 
 # target to generate assembly for a file
 cn_slow_hash_hard_intel.cpp.s:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/cn_slow_hash_hard_intel.cpp.s
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/cn_slow_hash_hard_intel.cpp.s
 .PHONY : cn_slow_hash_hard_intel.cpp.s
 
 cn_slow_hash_soft.o: cn_slow_hash_soft.cpp.o
@@ -336,7 +336,7 @@ cn_slow_hash_soft.o: cn_slow_hash_soft.cpp.o
 
 # target to build an object file
 cn_slow_hash_soft.cpp.o:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/cn_slow_hash_soft.cpp.o
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/cn_slow_hash_soft.cpp.o
 .PHONY : cn_slow_hash_soft.cpp.o
 
 cn_slow_hash_soft.i: cn_slow_hash_soft.cpp.i
@@ -345,7 +345,7 @@ cn_slow_hash_soft.i: cn_slow_hash_soft.cpp.i
 
 # target to preprocess a source file
 cn_slow_hash_soft.cpp.i:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/cn_slow_hash_soft.cpp.i
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/cn_slow_hash_soft.cpp.i
 .PHONY : cn_slow_hash_soft.cpp.i
 
 cn_slow_hash_soft.s: cn_slow_hash_soft.cpp.s
@@ -354,7 +354,7 @@ cn_slow_hash_soft.s: cn_slow_hash_soft.cpp.s
 
 # target to generate assembly for a file
 cn_slow_hash_soft.cpp.s:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/cn_slow_hash_soft.cpp.s
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/cn_slow_hash_soft.cpp.s
 .PHONY : cn_slow_hash_soft.cpp.s
 
 crypto-ops-data.o: crypto-ops-data.c.o
@@ -363,7 +363,7 @@ crypto-ops-data.o: crypto-ops-data.c.o
 
 # target to build an object file
 crypto-ops-data.c.o:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/crypto-ops-data.c.o
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/crypto-ops-data.c.o
 .PHONY : crypto-ops-data.c.o
 
 crypto-ops-data.i: crypto-ops-data.c.i
@@ -372,7 +372,7 @@ crypto-ops-data.i: crypto-ops-data.c.i
 
 # target to preprocess a source file
 crypto-ops-data.c.i:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/crypto-ops-data.c.i
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/crypto-ops-data.c.i
 .PHONY : crypto-ops-data.c.i
 
 crypto-ops-data.s: crypto-ops-data.c.s
@@ -381,7 +381,7 @@ crypto-ops-data.s: crypto-ops-data.c.s
 
 # target to generate assembly for a file
 crypto-ops-data.c.s:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/crypto-ops-data.c.s
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/crypto-ops-data.c.s
 .PHONY : crypto-ops-data.c.s
 
 crypto-ops.o: crypto-ops.c.o
@@ -390,7 +390,7 @@ crypto-ops.o: crypto-ops.c.o
 
 # target to build an object file
 crypto-ops.c.o:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/crypto-ops.c.o
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/crypto-ops.c.o
 .PHONY : crypto-ops.c.o
 
 crypto-ops.i: crypto-ops.c.i
@@ -399,7 +399,7 @@ crypto-ops.i: crypto-ops.c.i
 
 # target to preprocess a source file
 crypto-ops.c.i:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/crypto-ops.c.i
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/crypto-ops.c.i
 .PHONY : crypto-ops.c.i
 
 crypto-ops.s: crypto-ops.c.s
@@ -408,7 +408,7 @@ crypto-ops.s: crypto-ops.c.s
 
 # target to generate assembly for a file
 crypto-ops.c.s:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/crypto-ops.c.s
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/crypto-ops.c.s
 .PHONY : crypto-ops.c.s
 
 crypto.o: crypto.cpp.o
@@ -417,7 +417,7 @@ crypto.o: crypto.cpp.o
 
 # target to build an object file
 crypto.cpp.o:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/crypto.cpp.o
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/crypto.cpp.o
 .PHONY : crypto.cpp.o
 
 crypto.i: crypto.cpp.i
@@ -426,7 +426,7 @@ crypto.i: crypto.cpp.i
 
 # target to preprocess a source file
 crypto.cpp.i:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/crypto.cpp.i
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/crypto.cpp.i
 .PHONY : crypto.cpp.i
 
 crypto.s: crypto.cpp.s
@@ -435,7 +435,7 @@ crypto.s: crypto.cpp.s
 
 # target to generate assembly for a file
 crypto.cpp.s:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/crypto.cpp.s
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/crypto.cpp.s
 .PHONY : crypto.cpp.s
 
 groestl.o: groestl.c.o
@@ -444,7 +444,7 @@ groestl.o: groestl.c.o
 
 # target to build an object file
 groestl.c.o:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/groestl.c.o
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/groestl.c.o
 .PHONY : groestl.c.o
 
 groestl.i: groestl.c.i
@@ -453,7 +453,7 @@ groestl.i: groestl.c.i
 
 # target to preprocess a source file
 groestl.c.i:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/groestl.c.i
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/groestl.c.i
 .PHONY : groestl.c.i
 
 groestl.s: groestl.c.s
@@ -462,7 +462,7 @@ groestl.s: groestl.c.s
 
 # target to generate assembly for a file
 groestl.c.s:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/groestl.c.s
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/groestl.c.s
 .PHONY : groestl.c.s
 
 hash-extra-blake.o: hash-extra-blake.c.o
@@ -471,7 +471,7 @@ hash-extra-blake.o: hash-extra-blake.c.o
 
 # target to build an object file
 hash-extra-blake.c.o:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/hash-extra-blake.c.o
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/hash-extra-blake.c.o
 .PHONY : hash-extra-blake.c.o
 
 hash-extra-blake.i: hash-extra-blake.c.i
@@ -480,7 +480,7 @@ hash-extra-blake.i: hash-extra-blake.c.i
 
 # target to preprocess a source file
 hash-extra-blake.c.i:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/hash-extra-blake.c.i
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/hash-extra-blake.c.i
 .PHONY : hash-extra-blake.c.i
 
 hash-extra-blake.s: hash-extra-blake.c.s
@@ -489,7 +489,7 @@ hash-extra-blake.s: hash-extra-blake.c.s
 
 # target to generate assembly for a file
 hash-extra-blake.c.s:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/hash-extra-blake.c.s
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/hash-extra-blake.c.s
 .PHONY : hash-extra-blake.c.s
 
 hash-extra-groestl.o: hash-extra-groestl.c.o
@@ -498,7 +498,7 @@ hash-extra-groestl.o: hash-extra-groestl.c.o
 
 # target to build an object file
 hash-extra-groestl.c.o:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/hash-extra-groestl.c.o
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/hash-extra-groestl.c.o
 .PHONY : hash-extra-groestl.c.o
 
 hash-extra-groestl.i: hash-extra-groestl.c.i
@@ -507,7 +507,7 @@ hash-extra-groestl.i: hash-extra-groestl.c.i
 
 # target to preprocess a source file
 hash-extra-groestl.c.i:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/hash-extra-groestl.c.i
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/hash-extra-groestl.c.i
 .PHONY : hash-extra-groestl.c.i
 
 hash-extra-groestl.s: hash-extra-groestl.c.s
@@ -516,7 +516,7 @@ hash-extra-groestl.s: hash-extra-groestl.c.s
 
 # target to generate assembly for a file
 hash-extra-groestl.c.s:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/hash-extra-groestl.c.s
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/hash-extra-groestl.c.s
 .PHONY : hash-extra-groestl.c.s
 
 hash-extra-jh.o: hash-extra-jh.c.o
@@ -525,7 +525,7 @@ hash-extra-jh.o: hash-extra-jh.c.o
 
 # target to build an object file
 hash-extra-jh.c.o:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/hash-extra-jh.c.o
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/hash-extra-jh.c.o
 .PHONY : hash-extra-jh.c.o
 
 hash-extra-jh.i: hash-extra-jh.c.i
@@ -534,7 +534,7 @@ hash-extra-jh.i: hash-extra-jh.c.i
 
 # target to preprocess a source file
 hash-extra-jh.c.i:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/hash-extra-jh.c.i
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/hash-extra-jh.c.i
 .PHONY : hash-extra-jh.c.i
 
 hash-extra-jh.s: hash-extra-jh.c.s
@@ -543,7 +543,7 @@ hash-extra-jh.s: hash-extra-jh.c.s
 
 # target to generate assembly for a file
 hash-extra-jh.c.s:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/hash-extra-jh.c.s
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/hash-extra-jh.c.s
 .PHONY : hash-extra-jh.c.s
 
 hash-extra-skein.o: hash-extra-skein.c.o
@@ -552,7 +552,7 @@ hash-extra-skein.o: hash-extra-skein.c.o
 
 # target to build an object file
 hash-extra-skein.c.o:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/hash-extra-skein.c.o
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/hash-extra-skein.c.o
 .PHONY : hash-extra-skein.c.o
 
 hash-extra-skein.i: hash-extra-skein.c.i
@@ -561,7 +561,7 @@ hash-extra-skein.i: hash-extra-skein.c.i
 
 # target to preprocess a source file
 hash-extra-skein.c.i:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/hash-extra-skein.c.i
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/hash-extra-skein.c.i
 .PHONY : hash-extra-skein.c.i
 
 hash-extra-skein.s: hash-extra-skein.c.s
@@ -570,7 +570,7 @@ hash-extra-skein.s: hash-extra-skein.c.s
 
 # target to generate assembly for a file
 hash-extra-skein.c.s:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/hash-extra-skein.c.s
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/hash-extra-skein.c.s
 .PHONY : hash-extra-skein.c.s
 
 hash.o: hash.c.o
@@ -579,7 +579,7 @@ hash.o: hash.c.o
 
 # target to build an object file
 hash.c.o:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/hash.c.o
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/hash.c.o
 .PHONY : hash.c.o
 
 hash.i: hash.c.i
@@ -588,7 +588,7 @@ hash.i: hash.c.i
 
 # target to preprocess a source file
 hash.c.i:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/hash.c.i
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/hash.c.i
 .PHONY : hash.c.i
 
 hash.s: hash.c.s
@@ -597,7 +597,7 @@ hash.s: hash.c.s
 
 # target to generate assembly for a file
 hash.c.s:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/hash.c.s
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/hash.c.s
 .PHONY : hash.c.s
 
 jh.o: jh.c.o
@@ -606,7 +606,7 @@ jh.o: jh.c.o
 
 # target to build an object file
 jh.c.o:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/jh.c.o
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/jh.c.o
 .PHONY : jh.c.o
 
 jh.i: jh.c.i
@@ -615,7 +615,7 @@ jh.i: jh.c.i
 
 # target to preprocess a source file
 jh.c.i:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/jh.c.i
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/jh.c.i
 .PHONY : jh.c.i
 
 jh.s: jh.c.s
@@ -624,7 +624,7 @@ jh.s: jh.c.s
 
 # target to generate assembly for a file
 jh.c.s:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/jh.c.s
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/jh.c.s
 .PHONY : jh.c.s
 
 keccak.o: keccak.c.o
@@ -633,7 +633,7 @@ keccak.o: keccak.c.o
 
 # target to build an object file
 keccak.c.o:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/keccak.c.o
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/keccak.c.o
 .PHONY : keccak.c.o
 
 keccak.i: keccak.c.i
@@ -642,7 +642,7 @@ keccak.i: keccak.c.i
 
 # target to preprocess a source file
 keccak.c.i:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/keccak.c.i
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/keccak.c.i
 .PHONY : keccak.c.i
 
 keccak.s: keccak.c.s
@@ -651,7 +651,7 @@ keccak.s: keccak.c.s
 
 # target to generate assembly for a file
 keccak.c.s:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/keccak.c.s
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/keccak.c.s
 .PHONY : keccak.c.s
 
 oaes_lib.o: oaes_lib.c.o
@@ -660,7 +660,7 @@ oaes_lib.o: oaes_lib.c.o
 
 # target to build an object file
 oaes_lib.c.o:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/oaes_lib.c.o
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/oaes_lib.c.o
 .PHONY : oaes_lib.c.o
 
 oaes_lib.i: oaes_lib.c.i
@@ -669,7 +669,7 @@ oaes_lib.i: oaes_lib.c.i
 
 # target to preprocess a source file
 oaes_lib.c.i:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/oaes_lib.c.i
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/oaes_lib.c.i
 .PHONY : oaes_lib.c.i
 
 oaes_lib.s: oaes_lib.c.s
@@ -678,7 +678,7 @@ oaes_lib.s: oaes_lib.c.s
 
 # target to generate assembly for a file
 oaes_lib.c.s:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/oaes_lib.c.s
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/oaes_lib.c.s
 .PHONY : oaes_lib.c.s
 
 random.o: random.c.o
@@ -687,7 +687,7 @@ random.o: random.c.o
 
 # target to build an object file
 random.c.o:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/random.c.o
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/random.c.o
 .PHONY : random.c.o
 
 random.i: random.c.i
@@ -696,7 +696,7 @@ random.i: random.c.i
 
 # target to preprocess a source file
 random.c.i:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/random.c.i
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/random.c.i
 .PHONY : random.c.i
 
 random.s: random.c.s
@@ -705,7 +705,7 @@ random.s: random.c.s
 
 # target to generate assembly for a file
 random.c.s:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/random.c.s
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/random.c.s
 .PHONY : random.c.s
 
 skein.o: skein.c.o
@@ -714,7 +714,7 @@ skein.o: skein.c.o
 
 # target to build an object file
 skein.c.o:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/skein.c.o
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/skein.c.o
 .PHONY : skein.c.o
 
 skein.i: skein.c.i
@@ -723,7 +723,7 @@ skein.i: skein.c.i
 
 # target to preprocess a source file
 skein.c.i:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/skein.c.i
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/skein.c.i
 .PHONY : skein.c.i
 
 skein.s: skein.c.s
@@ -732,7 +732,7 @@ skein.s: skein.c.s
 
 # target to generate assembly for a file
 skein.c.s:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/skein.c.s
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/skein.c.s
 .PHONY : skein.c.s
 
 tree-hash.o: tree-hash.c.o
@@ -741,7 +741,7 @@ tree-hash.o: tree-hash.c.o
 
 # target to build an object file
 tree-hash.c.o:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/tree-hash.c.o
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/tree-hash.c.o
 .PHONY : tree-hash.c.o
 
 tree-hash.i: tree-hash.c.i
@@ -750,7 +750,7 @@ tree-hash.i: tree-hash.c.i
 
 # target to preprocess a source file
 tree-hash.c.i:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/tree-hash.c.i
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/tree-hash.c.i
 .PHONY : tree-hash.c.i
 
 tree-hash.s: tree-hash.c.s
@@ -759,7 +759,7 @@ tree-hash.s: tree-hash.c.s
 
 # target to generate assembly for a file
 tree-hash.c.s:
-	cd /home/peter/sevabit && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/tree-hash.c.s
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/crypto/CMakeFiles/obj_cncrypto.dir/build.make src/crypto/CMakeFiles/obj_cncrypto.dir/tree-hash.c.s
 .PHONY : tree-hash.c.s
 
 # Help Target
@@ -851,6 +851,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/peter/sevabit && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

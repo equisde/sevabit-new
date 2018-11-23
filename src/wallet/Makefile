@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/peter/sevabit
+CMAKE_SOURCE_DIR = /home/rcarrasco/Escritorio/sevabit-new
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/peter/sevabit
+CMAKE_BINARY_DIR = /home/rcarrasco/Escritorio/sevabit-new
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -135,14 +135,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/peter/sevabit && $(CMAKE_COMMAND) -E cmake_progress_start /home/peter/sevabit/CMakeFiles /home/peter/sevabit/src/wallet/CMakeFiles/progress.marks
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/wallet/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/sevabit/CMakeFiles 0
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(CMAKE_COMMAND) -E cmake_progress_start /home/rcarrasco/Escritorio/sevabit-new/CMakeFiles /home/rcarrasco/Escritorio/sevabit-new/src/wallet/CMakeFiles/progress.marks
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f CMakeFiles/Makefile2 src/wallet/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rcarrasco/Escritorio/sevabit-new/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/wallet/clean
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f CMakeFiles/Makefile2 src/wallet/clean
 .PHONY : clean
 
 # The main clean target
@@ -152,22 +152,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/wallet/preinstall
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f CMakeFiles/Makefile2 src/wallet/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/wallet/preinstall
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f CMakeFiles/Makefile2 src/wallet/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/peter/sevabit && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/wallet/CMakeFiles/obj_wallet.dir/rule:
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/wallet/CMakeFiles/obj_wallet.dir/rule
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f CMakeFiles/Makefile2 src/wallet/CMakeFiles/obj_wallet.dir/rule
 .PHONY : src/wallet/CMakeFiles/obj_wallet.dir/rule
 
 # Convenience name for target.
@@ -177,12 +177,12 @@ obj_wallet: src/wallet/CMakeFiles/obj_wallet.dir/rule
 
 # fast build rule for target.
 obj_wallet/fast:
-	cd /home/peter/sevabit && $(MAKE) -f src/wallet/CMakeFiles/obj_wallet.dir/build.make src/wallet/CMakeFiles/obj_wallet.dir/build
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/wallet/CMakeFiles/obj_wallet.dir/build.make src/wallet/CMakeFiles/obj_wallet.dir/build
 .PHONY : obj_wallet/fast
 
 # Convenience name for target.
 src/wallet/CMakeFiles/wallet.dir/rule:
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/wallet/CMakeFiles/wallet.dir/rule
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f CMakeFiles/Makefile2 src/wallet/CMakeFiles/wallet.dir/rule
 .PHONY : src/wallet/CMakeFiles/wallet.dir/rule
 
 # Convenience name for target.
@@ -192,12 +192,12 @@ wallet: src/wallet/CMakeFiles/wallet.dir/rule
 
 # fast build rule for target.
 wallet/fast:
-	cd /home/peter/sevabit && $(MAKE) -f src/wallet/CMakeFiles/wallet.dir/build.make src/wallet/CMakeFiles/wallet.dir/build
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/wallet/CMakeFiles/wallet.dir/build.make src/wallet/CMakeFiles/wallet.dir/build
 .PHONY : wallet/fast
 
 # Convenience name for target.
 src/wallet/CMakeFiles/wallet_rpc_server.dir/rule:
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/wallet/CMakeFiles/wallet_rpc_server.dir/rule
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f CMakeFiles/Makefile2 src/wallet/CMakeFiles/wallet_rpc_server.dir/rule
 .PHONY : src/wallet/CMakeFiles/wallet_rpc_server.dir/rule
 
 # Convenience name for target.
@@ -207,7 +207,7 @@ wallet_rpc_server: src/wallet/CMakeFiles/wallet_rpc_server.dir/rule
 
 # fast build rule for target.
 wallet_rpc_server/fast:
-	cd /home/peter/sevabit && $(MAKE) -f src/wallet/CMakeFiles/wallet_rpc_server.dir/build.make src/wallet/CMakeFiles/wallet_rpc_server.dir/build
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/wallet/CMakeFiles/wallet_rpc_server.dir/build.make src/wallet/CMakeFiles/wallet_rpc_server.dir/build
 .PHONY : wallet_rpc_server/fast
 
 node_rpc_proxy.o: node_rpc_proxy.cpp.o
@@ -216,7 +216,7 @@ node_rpc_proxy.o: node_rpc_proxy.cpp.o
 
 # target to build an object file
 node_rpc_proxy.cpp.o:
-	cd /home/peter/sevabit && $(MAKE) -f src/wallet/CMakeFiles/obj_wallet.dir/build.make src/wallet/CMakeFiles/obj_wallet.dir/node_rpc_proxy.cpp.o
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/wallet/CMakeFiles/obj_wallet.dir/build.make src/wallet/CMakeFiles/obj_wallet.dir/node_rpc_proxy.cpp.o
 .PHONY : node_rpc_proxy.cpp.o
 
 node_rpc_proxy.i: node_rpc_proxy.cpp.i
@@ -225,7 +225,7 @@ node_rpc_proxy.i: node_rpc_proxy.cpp.i
 
 # target to preprocess a source file
 node_rpc_proxy.cpp.i:
-	cd /home/peter/sevabit && $(MAKE) -f src/wallet/CMakeFiles/obj_wallet.dir/build.make src/wallet/CMakeFiles/obj_wallet.dir/node_rpc_proxy.cpp.i
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/wallet/CMakeFiles/obj_wallet.dir/build.make src/wallet/CMakeFiles/obj_wallet.dir/node_rpc_proxy.cpp.i
 .PHONY : node_rpc_proxy.cpp.i
 
 node_rpc_proxy.s: node_rpc_proxy.cpp.s
@@ -234,7 +234,7 @@ node_rpc_proxy.s: node_rpc_proxy.cpp.s
 
 # target to generate assembly for a file
 node_rpc_proxy.cpp.s:
-	cd /home/peter/sevabit && $(MAKE) -f src/wallet/CMakeFiles/obj_wallet.dir/build.make src/wallet/CMakeFiles/obj_wallet.dir/node_rpc_proxy.cpp.s
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/wallet/CMakeFiles/obj_wallet.dir/build.make src/wallet/CMakeFiles/obj_wallet.dir/node_rpc_proxy.cpp.s
 .PHONY : node_rpc_proxy.cpp.s
 
 ringdb.o: ringdb.cpp.o
@@ -243,7 +243,7 @@ ringdb.o: ringdb.cpp.o
 
 # target to build an object file
 ringdb.cpp.o:
-	cd /home/peter/sevabit && $(MAKE) -f src/wallet/CMakeFiles/obj_wallet.dir/build.make src/wallet/CMakeFiles/obj_wallet.dir/ringdb.cpp.o
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/wallet/CMakeFiles/obj_wallet.dir/build.make src/wallet/CMakeFiles/obj_wallet.dir/ringdb.cpp.o
 .PHONY : ringdb.cpp.o
 
 ringdb.i: ringdb.cpp.i
@@ -252,7 +252,7 @@ ringdb.i: ringdb.cpp.i
 
 # target to preprocess a source file
 ringdb.cpp.i:
-	cd /home/peter/sevabit && $(MAKE) -f src/wallet/CMakeFiles/obj_wallet.dir/build.make src/wallet/CMakeFiles/obj_wallet.dir/ringdb.cpp.i
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/wallet/CMakeFiles/obj_wallet.dir/build.make src/wallet/CMakeFiles/obj_wallet.dir/ringdb.cpp.i
 .PHONY : ringdb.cpp.i
 
 ringdb.s: ringdb.cpp.s
@@ -261,7 +261,7 @@ ringdb.s: ringdb.cpp.s
 
 # target to generate assembly for a file
 ringdb.cpp.s:
-	cd /home/peter/sevabit && $(MAKE) -f src/wallet/CMakeFiles/obj_wallet.dir/build.make src/wallet/CMakeFiles/obj_wallet.dir/ringdb.cpp.s
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/wallet/CMakeFiles/obj_wallet.dir/build.make src/wallet/CMakeFiles/obj_wallet.dir/ringdb.cpp.s
 .PHONY : ringdb.cpp.s
 
 wallet2.o: wallet2.cpp.o
@@ -270,7 +270,7 @@ wallet2.o: wallet2.cpp.o
 
 # target to build an object file
 wallet2.cpp.o:
-	cd /home/peter/sevabit && $(MAKE) -f src/wallet/CMakeFiles/obj_wallet.dir/build.make src/wallet/CMakeFiles/obj_wallet.dir/wallet2.cpp.o
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/wallet/CMakeFiles/obj_wallet.dir/build.make src/wallet/CMakeFiles/obj_wallet.dir/wallet2.cpp.o
 .PHONY : wallet2.cpp.o
 
 wallet2.i: wallet2.cpp.i
@@ -279,7 +279,7 @@ wallet2.i: wallet2.cpp.i
 
 # target to preprocess a source file
 wallet2.cpp.i:
-	cd /home/peter/sevabit && $(MAKE) -f src/wallet/CMakeFiles/obj_wallet.dir/build.make src/wallet/CMakeFiles/obj_wallet.dir/wallet2.cpp.i
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/wallet/CMakeFiles/obj_wallet.dir/build.make src/wallet/CMakeFiles/obj_wallet.dir/wallet2.cpp.i
 .PHONY : wallet2.cpp.i
 
 wallet2.s: wallet2.cpp.s
@@ -288,7 +288,7 @@ wallet2.s: wallet2.cpp.s
 
 # target to generate assembly for a file
 wallet2.cpp.s:
-	cd /home/peter/sevabit && $(MAKE) -f src/wallet/CMakeFiles/obj_wallet.dir/build.make src/wallet/CMakeFiles/obj_wallet.dir/wallet2.cpp.s
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/wallet/CMakeFiles/obj_wallet.dir/build.make src/wallet/CMakeFiles/obj_wallet.dir/wallet2.cpp.s
 .PHONY : wallet2.cpp.s
 
 wallet_args.o: wallet_args.cpp.o
@@ -297,7 +297,7 @@ wallet_args.o: wallet_args.cpp.o
 
 # target to build an object file
 wallet_args.cpp.o:
-	cd /home/peter/sevabit && $(MAKE) -f src/wallet/CMakeFiles/obj_wallet.dir/build.make src/wallet/CMakeFiles/obj_wallet.dir/wallet_args.cpp.o
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/wallet/CMakeFiles/obj_wallet.dir/build.make src/wallet/CMakeFiles/obj_wallet.dir/wallet_args.cpp.o
 .PHONY : wallet_args.cpp.o
 
 wallet_args.i: wallet_args.cpp.i
@@ -306,7 +306,7 @@ wallet_args.i: wallet_args.cpp.i
 
 # target to preprocess a source file
 wallet_args.cpp.i:
-	cd /home/peter/sevabit && $(MAKE) -f src/wallet/CMakeFiles/obj_wallet.dir/build.make src/wallet/CMakeFiles/obj_wallet.dir/wallet_args.cpp.i
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/wallet/CMakeFiles/obj_wallet.dir/build.make src/wallet/CMakeFiles/obj_wallet.dir/wallet_args.cpp.i
 .PHONY : wallet_args.cpp.i
 
 wallet_args.s: wallet_args.cpp.s
@@ -315,7 +315,7 @@ wallet_args.s: wallet_args.cpp.s
 
 # target to generate assembly for a file
 wallet_args.cpp.s:
-	cd /home/peter/sevabit && $(MAKE) -f src/wallet/CMakeFiles/obj_wallet.dir/build.make src/wallet/CMakeFiles/obj_wallet.dir/wallet_args.cpp.s
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/wallet/CMakeFiles/obj_wallet.dir/build.make src/wallet/CMakeFiles/obj_wallet.dir/wallet_args.cpp.s
 .PHONY : wallet_args.cpp.s
 
 wallet_rpc_server.o: wallet_rpc_server.cpp.o
@@ -324,7 +324,7 @@ wallet_rpc_server.o: wallet_rpc_server.cpp.o
 
 # target to build an object file
 wallet_rpc_server.cpp.o:
-	cd /home/peter/sevabit && $(MAKE) -f src/wallet/CMakeFiles/wallet_rpc_server.dir/build.make src/wallet/CMakeFiles/wallet_rpc_server.dir/wallet_rpc_server.cpp.o
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/wallet/CMakeFiles/wallet_rpc_server.dir/build.make src/wallet/CMakeFiles/wallet_rpc_server.dir/wallet_rpc_server.cpp.o
 .PHONY : wallet_rpc_server.cpp.o
 
 wallet_rpc_server.i: wallet_rpc_server.cpp.i
@@ -333,7 +333,7 @@ wallet_rpc_server.i: wallet_rpc_server.cpp.i
 
 # target to preprocess a source file
 wallet_rpc_server.cpp.i:
-	cd /home/peter/sevabit && $(MAKE) -f src/wallet/CMakeFiles/wallet_rpc_server.dir/build.make src/wallet/CMakeFiles/wallet_rpc_server.dir/wallet_rpc_server.cpp.i
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/wallet/CMakeFiles/wallet_rpc_server.dir/build.make src/wallet/CMakeFiles/wallet_rpc_server.dir/wallet_rpc_server.cpp.i
 .PHONY : wallet_rpc_server.cpp.i
 
 wallet_rpc_server.s: wallet_rpc_server.cpp.s
@@ -342,7 +342,7 @@ wallet_rpc_server.s: wallet_rpc_server.cpp.s
 
 # target to generate assembly for a file
 wallet_rpc_server.cpp.s:
-	cd /home/peter/sevabit && $(MAKE) -f src/wallet/CMakeFiles/wallet_rpc_server.dir/build.make src/wallet/CMakeFiles/wallet_rpc_server.dir/wallet_rpc_server.cpp.s
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/wallet/CMakeFiles/wallet_rpc_server.dir/build.make src/wallet/CMakeFiles/wallet_rpc_server.dir/wallet_rpc_server.cpp.s
 .PHONY : wallet_rpc_server.cpp.s
 
 # Help Target
@@ -387,6 +387,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/peter/sevabit && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

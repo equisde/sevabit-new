@@ -77,6 +77,25 @@ namespace cryptonote
       END_KV_SERIALIZE_MAP()
     };
   };
+  struct COMMAND_RPC_GET_PEER_LIST_FULL
+  {
+    struct request
+    {
+        BEGIN_KV_SERIALIZE_MAP()
+        END_KV_SERIALIZE_MAP()
+    };
+
+    struct response
+    {
+      std::vector<std::string> peers;
+      std::string status;
+
+      BEGIN_KV_SERIALIZE_MAP()
+        KV_SERIALIZE(peers)
+        KV_SERIALIZE(status)
+      END_KV_SERIALIZE_MAP()
+    };
+  };
 
   struct COMMAND_RPC_GET_BLOCKS_FAST
   {

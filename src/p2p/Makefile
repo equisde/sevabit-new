@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/peter/sevabit
+CMAKE_SOURCE_DIR = /home/rcarrasco/Escritorio/sevabit-new
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/peter/sevabit
+CMAKE_BINARY_DIR = /home/rcarrasco/Escritorio/sevabit-new
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -135,14 +135,14 @@ install/local/fast: install/local
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/peter/sevabit && $(CMAKE_COMMAND) -E cmake_progress_start /home/peter/sevabit/CMakeFiles /home/peter/sevabit/src/p2p/CMakeFiles/progress.marks
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/p2p/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/sevabit/CMakeFiles 0
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(CMAKE_COMMAND) -E cmake_progress_start /home/rcarrasco/Escritorio/sevabit-new/CMakeFiles /home/rcarrasco/Escritorio/sevabit-new/src/p2p/CMakeFiles/progress.marks
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f CMakeFiles/Makefile2 src/p2p/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rcarrasco/Escritorio/sevabit-new/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/p2p/clean
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f CMakeFiles/Makefile2 src/p2p/clean
 .PHONY : clean
 
 # The main clean target
@@ -152,22 +152,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/p2p/preinstall
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f CMakeFiles/Makefile2 src/p2p/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/p2p/preinstall
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f CMakeFiles/Makefile2 src/p2p/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/peter/sevabit && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/p2p/CMakeFiles/obj_p2p.dir/rule:
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/p2p/CMakeFiles/obj_p2p.dir/rule
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f CMakeFiles/Makefile2 src/p2p/CMakeFiles/obj_p2p.dir/rule
 .PHONY : src/p2p/CMakeFiles/obj_p2p.dir/rule
 
 # Convenience name for target.
@@ -177,12 +177,12 @@ obj_p2p: src/p2p/CMakeFiles/obj_p2p.dir/rule
 
 # fast build rule for target.
 obj_p2p/fast:
-	cd /home/peter/sevabit && $(MAKE) -f src/p2p/CMakeFiles/obj_p2p.dir/build.make src/p2p/CMakeFiles/obj_p2p.dir/build
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/p2p/CMakeFiles/obj_p2p.dir/build.make src/p2p/CMakeFiles/obj_p2p.dir/build
 .PHONY : obj_p2p/fast
 
 # Convenience name for target.
 src/p2p/CMakeFiles/p2p.dir/rule:
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/p2p/CMakeFiles/p2p.dir/rule
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f CMakeFiles/Makefile2 src/p2p/CMakeFiles/p2p.dir/rule
 .PHONY : src/p2p/CMakeFiles/p2p.dir/rule
 
 # Convenience name for target.
@@ -192,7 +192,7 @@ p2p: src/p2p/CMakeFiles/p2p.dir/rule
 
 # fast build rule for target.
 p2p/fast:
-	cd /home/peter/sevabit && $(MAKE) -f src/p2p/CMakeFiles/p2p.dir/build.make src/p2p/CMakeFiles/p2p.dir/build
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/p2p/CMakeFiles/p2p.dir/build.make src/p2p/CMakeFiles/p2p.dir/build
 .PHONY : p2p/fast
 
 net_node.o: net_node.cpp.o
@@ -201,7 +201,7 @@ net_node.o: net_node.cpp.o
 
 # target to build an object file
 net_node.cpp.o:
-	cd /home/peter/sevabit && $(MAKE) -f src/p2p/CMakeFiles/obj_p2p.dir/build.make src/p2p/CMakeFiles/obj_p2p.dir/net_node.cpp.o
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/p2p/CMakeFiles/obj_p2p.dir/build.make src/p2p/CMakeFiles/obj_p2p.dir/net_node.cpp.o
 .PHONY : net_node.cpp.o
 
 net_node.i: net_node.cpp.i
@@ -210,7 +210,7 @@ net_node.i: net_node.cpp.i
 
 # target to preprocess a source file
 net_node.cpp.i:
-	cd /home/peter/sevabit && $(MAKE) -f src/p2p/CMakeFiles/obj_p2p.dir/build.make src/p2p/CMakeFiles/obj_p2p.dir/net_node.cpp.i
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/p2p/CMakeFiles/obj_p2p.dir/build.make src/p2p/CMakeFiles/obj_p2p.dir/net_node.cpp.i
 .PHONY : net_node.cpp.i
 
 net_node.s: net_node.cpp.s
@@ -219,7 +219,7 @@ net_node.s: net_node.cpp.s
 
 # target to generate assembly for a file
 net_node.cpp.s:
-	cd /home/peter/sevabit && $(MAKE) -f src/p2p/CMakeFiles/obj_p2p.dir/build.make src/p2p/CMakeFiles/obj_p2p.dir/net_node.cpp.s
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/p2p/CMakeFiles/obj_p2p.dir/build.make src/p2p/CMakeFiles/obj_p2p.dir/net_node.cpp.s
 .PHONY : net_node.cpp.s
 
 # Help Target
@@ -251,6 +251,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/peter/sevabit && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

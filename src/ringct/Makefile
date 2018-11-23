@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/peter/sevabit
+CMAKE_SOURCE_DIR = /home/rcarrasco/Escritorio/sevabit-new
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/peter/sevabit
+CMAKE_BINARY_DIR = /home/rcarrasco/Escritorio/sevabit-new
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -135,14 +135,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/peter/sevabit && $(CMAKE_COMMAND) -E cmake_progress_start /home/peter/sevabit/CMakeFiles /home/peter/sevabit/src/ringct/CMakeFiles/progress.marks
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/ringct/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/peter/sevabit/CMakeFiles 0
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(CMAKE_COMMAND) -E cmake_progress_start /home/rcarrasco/Escritorio/sevabit-new/CMakeFiles /home/rcarrasco/Escritorio/sevabit-new/src/ringct/CMakeFiles/progress.marks
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f CMakeFiles/Makefile2 src/ringct/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rcarrasco/Escritorio/sevabit-new/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/ringct/clean
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f CMakeFiles/Makefile2 src/ringct/clean
 .PHONY : clean
 
 # The main clean target
@@ -152,22 +152,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/ringct/preinstall
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f CMakeFiles/Makefile2 src/ringct/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/ringct/preinstall
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f CMakeFiles/Makefile2 src/ringct/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/peter/sevabit && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/ringct/CMakeFiles/ringct.dir/rule:
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/ringct/CMakeFiles/ringct.dir/rule
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f CMakeFiles/Makefile2 src/ringct/CMakeFiles/ringct.dir/rule
 .PHONY : src/ringct/CMakeFiles/ringct.dir/rule
 
 # Convenience name for target.
@@ -177,12 +177,12 @@ ringct: src/ringct/CMakeFiles/ringct.dir/rule
 
 # fast build rule for target.
 ringct/fast:
-	cd /home/peter/sevabit && $(MAKE) -f src/ringct/CMakeFiles/ringct.dir/build.make src/ringct/CMakeFiles/ringct.dir/build
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/ringct/CMakeFiles/ringct.dir/build.make src/ringct/CMakeFiles/ringct.dir/build
 .PHONY : ringct/fast
 
 # Convenience name for target.
 src/ringct/CMakeFiles/ringct_basic.dir/rule:
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/ringct/CMakeFiles/ringct_basic.dir/rule
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f CMakeFiles/Makefile2 src/ringct/CMakeFiles/ringct_basic.dir/rule
 .PHONY : src/ringct/CMakeFiles/ringct_basic.dir/rule
 
 # Convenience name for target.
@@ -192,12 +192,12 @@ ringct_basic: src/ringct/CMakeFiles/ringct_basic.dir/rule
 
 # fast build rule for target.
 ringct_basic/fast:
-	cd /home/peter/sevabit && $(MAKE) -f src/ringct/CMakeFiles/ringct_basic.dir/build.make src/ringct/CMakeFiles/ringct_basic.dir/build
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/ringct/CMakeFiles/ringct_basic.dir/build.make src/ringct/CMakeFiles/ringct_basic.dir/build
 .PHONY : ringct_basic/fast
 
 # Convenience name for target.
 src/ringct/CMakeFiles/obj_ringct_basic.dir/rule:
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/ringct/CMakeFiles/obj_ringct_basic.dir/rule
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f CMakeFiles/Makefile2 src/ringct/CMakeFiles/obj_ringct_basic.dir/rule
 .PHONY : src/ringct/CMakeFiles/obj_ringct_basic.dir/rule
 
 # Convenience name for target.
@@ -207,12 +207,12 @@ obj_ringct_basic: src/ringct/CMakeFiles/obj_ringct_basic.dir/rule
 
 # fast build rule for target.
 obj_ringct_basic/fast:
-	cd /home/peter/sevabit && $(MAKE) -f src/ringct/CMakeFiles/obj_ringct_basic.dir/build.make src/ringct/CMakeFiles/obj_ringct_basic.dir/build
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/ringct/CMakeFiles/obj_ringct_basic.dir/build.make src/ringct/CMakeFiles/obj_ringct_basic.dir/build
 .PHONY : obj_ringct_basic/fast
 
 # Convenience name for target.
 src/ringct/CMakeFiles/obj_ringct.dir/rule:
-	cd /home/peter/sevabit && $(MAKE) -f CMakeFiles/Makefile2 src/ringct/CMakeFiles/obj_ringct.dir/rule
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f CMakeFiles/Makefile2 src/ringct/CMakeFiles/obj_ringct.dir/rule
 .PHONY : src/ringct/CMakeFiles/obj_ringct.dir/rule
 
 # Convenience name for target.
@@ -222,7 +222,7 @@ obj_ringct: src/ringct/CMakeFiles/obj_ringct.dir/rule
 
 # fast build rule for target.
 obj_ringct/fast:
-	cd /home/peter/sevabit && $(MAKE) -f src/ringct/CMakeFiles/obj_ringct.dir/build.make src/ringct/CMakeFiles/obj_ringct.dir/build
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/ringct/CMakeFiles/obj_ringct.dir/build.make src/ringct/CMakeFiles/obj_ringct.dir/build
 .PHONY : obj_ringct/fast
 
 bulletproofs.o: bulletproofs.cc.o
@@ -231,7 +231,7 @@ bulletproofs.o: bulletproofs.cc.o
 
 # target to build an object file
 bulletproofs.cc.o:
-	cd /home/peter/sevabit && $(MAKE) -f src/ringct/CMakeFiles/obj_ringct_basic.dir/build.make src/ringct/CMakeFiles/obj_ringct_basic.dir/bulletproofs.cc.o
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/ringct/CMakeFiles/obj_ringct_basic.dir/build.make src/ringct/CMakeFiles/obj_ringct_basic.dir/bulletproofs.cc.o
 .PHONY : bulletproofs.cc.o
 
 bulletproofs.i: bulletproofs.cc.i
@@ -240,7 +240,7 @@ bulletproofs.i: bulletproofs.cc.i
 
 # target to preprocess a source file
 bulletproofs.cc.i:
-	cd /home/peter/sevabit && $(MAKE) -f src/ringct/CMakeFiles/obj_ringct_basic.dir/build.make src/ringct/CMakeFiles/obj_ringct_basic.dir/bulletproofs.cc.i
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/ringct/CMakeFiles/obj_ringct_basic.dir/build.make src/ringct/CMakeFiles/obj_ringct_basic.dir/bulletproofs.cc.i
 .PHONY : bulletproofs.cc.i
 
 bulletproofs.s: bulletproofs.cc.s
@@ -249,7 +249,7 @@ bulletproofs.s: bulletproofs.cc.s
 
 # target to generate assembly for a file
 bulletproofs.cc.s:
-	cd /home/peter/sevabit && $(MAKE) -f src/ringct/CMakeFiles/obj_ringct_basic.dir/build.make src/ringct/CMakeFiles/obj_ringct_basic.dir/bulletproofs.cc.s
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/ringct/CMakeFiles/obj_ringct_basic.dir/build.make src/ringct/CMakeFiles/obj_ringct_basic.dir/bulletproofs.cc.s
 .PHONY : bulletproofs.cc.s
 
 rctCryptoOps.o: rctCryptoOps.c.o
@@ -258,7 +258,7 @@ rctCryptoOps.o: rctCryptoOps.c.o
 
 # target to build an object file
 rctCryptoOps.c.o:
-	cd /home/peter/sevabit && $(MAKE) -f src/ringct/CMakeFiles/obj_ringct_basic.dir/build.make src/ringct/CMakeFiles/obj_ringct_basic.dir/rctCryptoOps.c.o
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/ringct/CMakeFiles/obj_ringct_basic.dir/build.make src/ringct/CMakeFiles/obj_ringct_basic.dir/rctCryptoOps.c.o
 .PHONY : rctCryptoOps.c.o
 
 rctCryptoOps.i: rctCryptoOps.c.i
@@ -267,7 +267,7 @@ rctCryptoOps.i: rctCryptoOps.c.i
 
 # target to preprocess a source file
 rctCryptoOps.c.i:
-	cd /home/peter/sevabit && $(MAKE) -f src/ringct/CMakeFiles/obj_ringct_basic.dir/build.make src/ringct/CMakeFiles/obj_ringct_basic.dir/rctCryptoOps.c.i
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/ringct/CMakeFiles/obj_ringct_basic.dir/build.make src/ringct/CMakeFiles/obj_ringct_basic.dir/rctCryptoOps.c.i
 .PHONY : rctCryptoOps.c.i
 
 rctCryptoOps.s: rctCryptoOps.c.s
@@ -276,7 +276,7 @@ rctCryptoOps.s: rctCryptoOps.c.s
 
 # target to generate assembly for a file
 rctCryptoOps.c.s:
-	cd /home/peter/sevabit && $(MAKE) -f src/ringct/CMakeFiles/obj_ringct_basic.dir/build.make src/ringct/CMakeFiles/obj_ringct_basic.dir/rctCryptoOps.c.s
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/ringct/CMakeFiles/obj_ringct_basic.dir/build.make src/ringct/CMakeFiles/obj_ringct_basic.dir/rctCryptoOps.c.s
 .PHONY : rctCryptoOps.c.s
 
 rctOps.o: rctOps.cpp.o
@@ -285,7 +285,7 @@ rctOps.o: rctOps.cpp.o
 
 # target to build an object file
 rctOps.cpp.o:
-	cd /home/peter/sevabit && $(MAKE) -f src/ringct/CMakeFiles/obj_ringct_basic.dir/build.make src/ringct/CMakeFiles/obj_ringct_basic.dir/rctOps.cpp.o
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/ringct/CMakeFiles/obj_ringct_basic.dir/build.make src/ringct/CMakeFiles/obj_ringct_basic.dir/rctOps.cpp.o
 .PHONY : rctOps.cpp.o
 
 rctOps.i: rctOps.cpp.i
@@ -294,7 +294,7 @@ rctOps.i: rctOps.cpp.i
 
 # target to preprocess a source file
 rctOps.cpp.i:
-	cd /home/peter/sevabit && $(MAKE) -f src/ringct/CMakeFiles/obj_ringct_basic.dir/build.make src/ringct/CMakeFiles/obj_ringct_basic.dir/rctOps.cpp.i
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/ringct/CMakeFiles/obj_ringct_basic.dir/build.make src/ringct/CMakeFiles/obj_ringct_basic.dir/rctOps.cpp.i
 .PHONY : rctOps.cpp.i
 
 rctOps.s: rctOps.cpp.s
@@ -303,7 +303,7 @@ rctOps.s: rctOps.cpp.s
 
 # target to generate assembly for a file
 rctOps.cpp.s:
-	cd /home/peter/sevabit && $(MAKE) -f src/ringct/CMakeFiles/obj_ringct_basic.dir/build.make src/ringct/CMakeFiles/obj_ringct_basic.dir/rctOps.cpp.s
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/ringct/CMakeFiles/obj_ringct_basic.dir/build.make src/ringct/CMakeFiles/obj_ringct_basic.dir/rctOps.cpp.s
 .PHONY : rctOps.cpp.s
 
 rctSigs.o: rctSigs.cpp.o
@@ -312,7 +312,7 @@ rctSigs.o: rctSigs.cpp.o
 
 # target to build an object file
 rctSigs.cpp.o:
-	cd /home/peter/sevabit && $(MAKE) -f src/ringct/CMakeFiles/obj_ringct.dir/build.make src/ringct/CMakeFiles/obj_ringct.dir/rctSigs.cpp.o
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/ringct/CMakeFiles/obj_ringct.dir/build.make src/ringct/CMakeFiles/obj_ringct.dir/rctSigs.cpp.o
 .PHONY : rctSigs.cpp.o
 
 rctSigs.i: rctSigs.cpp.i
@@ -321,7 +321,7 @@ rctSigs.i: rctSigs.cpp.i
 
 # target to preprocess a source file
 rctSigs.cpp.i:
-	cd /home/peter/sevabit && $(MAKE) -f src/ringct/CMakeFiles/obj_ringct.dir/build.make src/ringct/CMakeFiles/obj_ringct.dir/rctSigs.cpp.i
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/ringct/CMakeFiles/obj_ringct.dir/build.make src/ringct/CMakeFiles/obj_ringct.dir/rctSigs.cpp.i
 .PHONY : rctSigs.cpp.i
 
 rctSigs.s: rctSigs.cpp.s
@@ -330,7 +330,7 @@ rctSigs.s: rctSigs.cpp.s
 
 # target to generate assembly for a file
 rctSigs.cpp.s:
-	cd /home/peter/sevabit && $(MAKE) -f src/ringct/CMakeFiles/obj_ringct.dir/build.make src/ringct/CMakeFiles/obj_ringct.dir/rctSigs.cpp.s
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/ringct/CMakeFiles/obj_ringct.dir/build.make src/ringct/CMakeFiles/obj_ringct.dir/rctSigs.cpp.s
 .PHONY : rctSigs.cpp.s
 
 rctTypes.o: rctTypes.cpp.o
@@ -339,7 +339,7 @@ rctTypes.o: rctTypes.cpp.o
 
 # target to build an object file
 rctTypes.cpp.o:
-	cd /home/peter/sevabit && $(MAKE) -f src/ringct/CMakeFiles/obj_ringct_basic.dir/build.make src/ringct/CMakeFiles/obj_ringct_basic.dir/rctTypes.cpp.o
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/ringct/CMakeFiles/obj_ringct_basic.dir/build.make src/ringct/CMakeFiles/obj_ringct_basic.dir/rctTypes.cpp.o
 .PHONY : rctTypes.cpp.o
 
 rctTypes.i: rctTypes.cpp.i
@@ -348,7 +348,7 @@ rctTypes.i: rctTypes.cpp.i
 
 # target to preprocess a source file
 rctTypes.cpp.i:
-	cd /home/peter/sevabit && $(MAKE) -f src/ringct/CMakeFiles/obj_ringct_basic.dir/build.make src/ringct/CMakeFiles/obj_ringct_basic.dir/rctTypes.cpp.i
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/ringct/CMakeFiles/obj_ringct_basic.dir/build.make src/ringct/CMakeFiles/obj_ringct_basic.dir/rctTypes.cpp.i
 .PHONY : rctTypes.cpp.i
 
 rctTypes.s: rctTypes.cpp.s
@@ -357,7 +357,7 @@ rctTypes.s: rctTypes.cpp.s
 
 # target to generate assembly for a file
 rctTypes.cpp.s:
-	cd /home/peter/sevabit && $(MAKE) -f src/ringct/CMakeFiles/obj_ringct_basic.dir/build.make src/ringct/CMakeFiles/obj_ringct_basic.dir/rctTypes.cpp.s
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(MAKE) -f src/ringct/CMakeFiles/obj_ringct_basic.dir/build.make src/ringct/CMakeFiles/obj_ringct_basic.dir/rctTypes.cpp.s
 .PHONY : rctTypes.cpp.s
 
 # Help Target
@@ -403,6 +403,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/peter/sevabit && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/rcarrasco/Escritorio/sevabit-new && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

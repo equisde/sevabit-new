@@ -1852,6 +1852,68 @@ namespace cryptonote
     return true;
   }
   //------------------------------------------------------------------------------------------------------------------------------
+  bool core_rpc_server::on_get_peers(const COMMAND_RPC_GET_PEER_LIST_FULL::request& req, COMMAND_RPC_GET_PEER_LIST_FULL::response& res)
+  {
+
+      // PRIMERO GUARDAS EN UNA VARIABLE EL MANAGER CON SU LISTA
+      // PARA ESO LLAMO A LA FUNCION
+      // ME PIDE 2 ARGUMENTOS PARA LLAMARLOS
+      // ENTONCES INICIALIZO
+      // ANDA LENTO
+      // LO COPIARE HAHA
+
+      // TIMER
+      PERF_TIMER(on_get_peers);
+
+      // DECLARO LAS 2 LISTAS
+      std::list<nodetool::peerlist_entry> white_list;
+      std::list<nodetool::peerlist_entry> gray_list;
+
+      // LE PASO LAS LISTAS AL MANAGER PARA QUE LOS LLENE
+      m_p2p.get_peerlist_manager().get_peerlist_full(gray_list, white_list);
+
+
+      // RECORRO LA LISTA BLANCA
+      for (auto & entry : white_list)
+      {
+         // PREGUNTO SI ES IPV4
+          if (entry.adr.get_type_id() == epee::net_utils::ipv4_network_address::ID) {
+              // SI LO ES ... LA PRINTEO Y AGREGO
+              res.peers.emplace_back(entry.adr.str()); // ESO ES TODO
+          }
+          // SINO, NADA
+      }
+
+      // LUEGO RECORRO LA GRAY LIST
+      for (auto & entry : gray_list)
+      {
+          // Y LO MISMO
+        if (entry.adr.get_type_id() == epee::net_utils::ipv4_network_address::ID) {
+
+            // SI LO ES ... LA PRINTEO Y AGREGO
+            res.peers.emplace_back(entry.adr.str()); // ESO ES TODO
+         }
+      }
+
+
+
+
+      //m_p2p.get_peerlist_manager().get_peerlist_full()
+
+
+      // LUEGO RECORRES LA LISTA QUE TRAJO (FOREACH)
+      // POR CADA RESULTADO AÑADES EL STRING AL VECTOR DE RES.PEERS :)
+      // SUERTE :)
+      // M_P2P ES EL MANAGER ok
+
+
+
+    // CHAO TODO
+    // COMPILA
+    res.status = CORE_RPC_STATUS_OK;
+    return true;
+  }
+  //------------------------------------------------------------------------------------------------------------------------------
   bool core_rpc_server::on_in_peers(const COMMAND_RPC_IN_PEERS::request& req, COMMAND_RPC_IN_PEERS::response& res)
   {
     PERF_TIMER(on_in_peers);
